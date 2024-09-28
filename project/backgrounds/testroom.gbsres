@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "f0629225-65e3-49d1-8db3-1cf5a3c1311e",
+  "name": "TestRoom",
+  "symbol": "bg_testroom",
+  "width": 22,
+  "height": 20,
+  "imageWidth": 176,
+  "imageHeight": 160,
+  "filename": "TestRoom.png",
+  "tileColors": ""
+}

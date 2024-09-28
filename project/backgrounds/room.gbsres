@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "1d809625-114d-4629-b2be-41c5a75cbc24",
+  "name": "Room",
+  "symbol": "bg_room",
+  "width": 30,
+  "height": 20,
+  "imageWidth": 240,
+  "imageHeight": 160,
+  "filename": "Room.png",
+  "tileColors": ""
+}

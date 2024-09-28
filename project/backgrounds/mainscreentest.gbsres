@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "083173db-87e4-42d7-9ead-ae523e99dd4e",
+  "name": "MainScreenTest",
+  "symbol": "bg_mainscreentest",
+  "width": 24,
+  "height": 18,
+  "imageWidth": 192,
+  "imageHeight": 144,
+  "filename": "MainScreenTest.png",
+  "tileColors": ""
+}

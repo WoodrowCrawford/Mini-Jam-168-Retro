@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "70e5b07e-65c3-4837-bbce-9b43c0e2d4b7",
+  "_index": 1,
+  "name": "Bedroom",
+  "backgroundId": "1d809625-114d-4629-b2be-41c5a75cbc24",
+  "tilesetId": "",
+  "width": 30,
+  "height": 20,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00bb+0f4+001a+0f4+001a+0f!002+0f!001a+0f2+00!0f!0013f+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_2",
+  "x": 429,
+  "y": 30,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

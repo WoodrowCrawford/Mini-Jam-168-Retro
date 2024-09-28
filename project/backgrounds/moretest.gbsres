@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "f758ff46-9e8c-4936-8a90-21a3b5f614cb",
+  "name": "MoreTest",
+  "symbol": "bg_moretest",
+  "width": 28,
+  "height": 20,
+  "imageWidth": 224,
+  "imageHeight": 160,
+  "filename": "MoreTest.png",
+  "tileColors": ""
+}

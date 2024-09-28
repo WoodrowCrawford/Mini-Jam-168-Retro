@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "e73f9760-30d2-4d6d-b5f4-041821e0f3db",
+  "name": "Sprite-0025",
+  "symbol": "bg_sprite_0025",
+  "width": 24,
+  "height": 16,
+  "imageWidth": 192,
+  "imageHeight": 128,
+  "filename": "Sprite-0025.png",
+  "tileColors": ""
+}

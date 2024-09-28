@@ -1,11 +1,11 @@
 {
   "_resourceType": "settings",
-  "startSceneId": "828516f8-1a51-4d32-bb66-a9455e309042",
+  "startSceneId": "70e5b07e-65c3-4837-bbce-9b43c0e2d4b7",
   "startX": 11,
   "startY": 8,
   "startMoveSpeed": 1,
   "startAnimSpeed": 7,
-  "startDirection": "down",
+  "startDirection": "right",
   "showCollisionExtraTiles": false,
   "sgbEnabled": false,
   "customHead": "",
