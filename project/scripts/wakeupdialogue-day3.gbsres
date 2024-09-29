@@ -1,20 +1,22 @@
 {
   "_resourceType": "script",
-  "id": "294733a7-c19c-4a27-ad61-751736bb00cc",
-  "name": "WakeUpDialogue-Day2",
-  "description": "The second day the player wakes up",
+  "id": "6bbad768-dbd9-494c-ab36-22a85579c919",
+  "name": "WakeUpDialogue-Day3",
+  "description": "",
   "variables": {},
   "actors": {},
-  "symbol": "script_1",
+  "symbol": "script_18",
   "script": [
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
           "...",
-          "What a nice dream!",
-          "But now I'm bored.",
-          "I guess I'll watch\nmore TV."
+          "Wow!",
+          "That was a\npleasant dream!\n",
+          "If only I were a \nhero in real\nlife...",
+          "But today is gonna\nbe a good day!",
+          "Let me see what's\non TV!"
         ],
         "__section": "text",
         "avatarId": "",
@@ -31,10 +33,9 @@
         "closeWhen": "key",
         "closeButton": "a",
         "closeDelayTime": 0.5,
-        "closeDelayFrames": 30,
-        "__collapse": false
+        "closeDelayFrames": 30
       },
-      "id": "808a3a7b-92e6-49c0-ab0a-a3aaf4c4d37d"
+      "id": "a8de24ad-a7cd-4529-8e3c-50f44c4bd302"
     }
   ]
 }

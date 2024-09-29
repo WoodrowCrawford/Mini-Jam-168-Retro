@@ -27,7 +27,8 @@
           }
         },
         "__collapseElse": true,
-        "__label": "If 1st day"
+        "__label": "If 1st day",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -110,6 +111,47 @@
         "false": []
       },
       "id": "caee1941-227b-4fe1-97cb-7df803280129"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true,
+        "__label": "If 3rd day"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "0",
+              "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e",
+              "__collapse": true
+            },
+            "id": "52485ce8-1ce9-47eb-be93-aa3b842a5593"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d860a294-840b-49b4-9948-1a5cf739da08",
+              "__collapse": true
+            },
+            "id": "b96d0321-3457-4507-b821-7900f77a84bc"
+          }
+        ],
+        "false": []
+      },
+      "id": "ca39b9e2-cefd-4f56-a982-f7fab6d0433b"
     }
   ]
 }

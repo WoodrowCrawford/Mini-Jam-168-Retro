@@ -68,7 +68,8 @@
             "value": 1
           }
         },
-        "__collapseElse": true
+        "__collapseElse": true,
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -83,6 +84,36 @@
         "false": []
       },
       "id": "350f1d6c-77e3-4b7e-be5b-cfb4d3a4f593"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "7a1fe71f-5729-4c82-a22e-c9b03e06c499"
+            },
+            "id": "42aebb4b-3f23-425f-befd-678b3e854dd5"
+          }
+        ],
+        "false": []
+      },
+      "id": "4153991d-825a-419e-bb5c-9c10fa1b7e32"
     }
   ],
   "playerHit1Script": [],

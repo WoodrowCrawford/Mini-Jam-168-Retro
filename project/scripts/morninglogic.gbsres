@@ -109,7 +109,7 @@
         },
         "__collapseElse": true,
         "__label": "If 2nd day",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -220,14 +220,135 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__collapse": true
             },
             "id": "9b370506-a4c3-4988-9d3e-93cfa2c8bc30"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "6bbad768-dbd9-494c-ab36-22a85579c919",
+              "__collapse": true
+            },
+            "id": "69cbd58e-d215-44e0-9493-aeebd4603580"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": true
+            },
+            "id": "a3cb4957-8513-4b84-a246-e103788a57f8"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "469fe855-4243-4192-b789-8b2f379fd438",
+              "__collapse": true
+            },
+            "id": "03732753-64a2-4eae-b0b5-36a2553a30ab"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "9",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "1fe6f08c-0c5f-4bf8-a908-f472fcef112f"
           }
         ],
         "false": []
       },
       "id": "9bd98eff-ba12-4823-b2dd-7e3e4977e35a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": true,
+        "__label": "if 4th day"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "fourth day"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "20c7f945-2c87-45f4-8a78-92d3998c8cc4"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "faa690b4-4107-4fee-b588-961ec8852ccd",
+              "__collapse": true
+            },
+            "id": "7a9942c7-cff7-407c-b67f-ec8a3d92d3fb"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": true
+            },
+            "id": "0ddbe853-7a0c-4a84-be98-1147cbf115ef"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "469fe855-4243-4192-b789-8b2f379fd438",
+              "__collapse": true
+            },
+            "id": "1f1dd35d-cac2-4126-8275-8cd9afac99c2"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "9",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "89aed3a0-5968-4b2f-94c6-e1cae803d616"
+          }
+        ],
+        "false": []
+      },
+      "id": "09400531-1ea3-4aa9-847d-d617c2f3d813"
     }
   ]
 }

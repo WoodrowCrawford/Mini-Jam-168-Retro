@@ -1,0 +1,82 @@
+{
+  "_resourceType": "script",
+  "id": "7a1fe71f-5729-4c82-a22e-c9b03e06c499",
+  "name": "DreamDialogue-Day3",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_21",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You have a\ndream...",
+          "You are a super\nhero again!",
+          "This time,\nyou are walking\nin an alley.",
+          "Your super\nsenses were\nleading you \nsomewhere...",
+          "You reached the\nback of the\nalley...",
+          "You definitely\nsense something...",
+          "But nothing\nis there!",
+          "Confused,\nyou turn around.",
+          "Maybe your senses\nwere wrong?",
+          "You start to head\nback.",
+          "*Rustle*",
+          "...!",
+          "You hear a strange\nsound.",
+          "It sounded like\nsomeone was\nstepping on trash.",
+          "You look towards\nthe dumpster,\nusing all your\nmight to focus.",
+          "...",
+          "...",
+          "!!!",
+          "You start to make \nout a figure!",
+          "It's a ghost!",
+          "You didn't even\nthink ghosts were\nreal!",
+          "Then again it's\njust a dream.",
+          "The ghost is\nmaking weird\nnoises.",
+          "\"ELLLLPSMNEEE\"",
+          "...",
+          "Its hard to make\nout what it's\nsaying.",
+          "But ghosts are\nbad, so you don't\nreally care.",
+          "You brought out\na magic vacuum.",
+          "Without a second\nthought, you\nflipped the \nswitch.",
+          "The ghost tried to\nescape, but it was\npointless.",
+          "It got sucked in \nthe vacuum, still\nmaking noises.",
+          "...",
+          "...!",
+          "You thought you\nheard it say\nsomething this\ntime.",
+          "There's no way,\nthat doesn't \nmake sense.",
+          "You repeat the \nwords out loud\nin confusion...",
+          "\"..help me? Why\nwould a ghost\nneed help?\"",
+          "Oh well. You ended\nup saving the day\nanyway.",
+          "...",
+          "You wake up \nfeeling good!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "7bc8ad70-25cb-4305-9a69-c1e16a60b135"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "55a904f8-0451-45ee-8c11-6a1465781d73"
+      },
+      "id": "3ba35cb1-51fc-4d26-9f8a-16b8e26e7d20"
+    }
+  ]
+}

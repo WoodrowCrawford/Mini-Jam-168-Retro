@@ -1,0 +1,49 @@
+{
+  "_resourceType": "script",
+  "id": "304db8d4-b1d8-46fa-8863-2f22b40ca2db",
+  "name": "GoToBedDialogue-Day3",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_20",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "...",
+          "Yeah right.",
+          "Ghosts aren't\nreal...",
+          "It probably\npeople pulling\npranks.",
+          "It is spooky\nseason after all.",
+          "...",
+          "I should get some\nrest."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "830040d1-a3a5-4b6f-9d4c-f6e546e77dc3"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "c03393e1-2acf-451e-a43c-7d76172a44f3"
+      },
+      "id": "d2ec0d0d-6866-4ac9-8309-c6437e3d619f"
+    }
+  ]
+}

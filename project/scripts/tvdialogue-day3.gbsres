@@ -1,0 +1,64 @@
+{
+  "_resourceType": "script",
+  "id": "d860a294-840b-49b4-9948-1a5cf739da08",
+  "name": "TVDialogue-Day3",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_19",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The news is on \nagain.",
+          "They are talking \nabout an increase\nin paranormal\nactivities...",
+          "You pay attention,\ncurious about\nthe situation...",
+          "\"We have been\ngetting creepy \nreports recently.\"",
+          "\"Some have claimed\nto see ghosts in\nthe middle of the \nnight.\"",
+          "\"We can't confirm\nthese claims,\nbut just to be\nsafe...",
+          "\"We want to make\nsure everyone is\naware and stays\nsafe!\"",
+          "\"If something looks\nsuspicious...\"",
+          "\"DON'T\ninvestigate!\"",
+          "\"We can not\nstress this\nenough.\"",
+          "\"Call\nxxx-xxx-xxxx \ninstead.\"\n",
+          "\"Let the\nprofessionals \ndo what they do \nbest!\"",
+          "The news ends\nthere.",
+          "You turn off the\nTV."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": true,
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "bcece11d-e769-4d84-9f5b-c3d189a2686a"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "3043a94e-40d1-47a5-9933-30103b0a8297",
+        "__collapse": true
+      },
+      "id": "11108513-6028-4a0b-9abb-d19e7ef8baec"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "304db8d4-b1d8-46fa-8863-2f22b40ca2db"
+      },
+      "id": "08f81135-8c08-4451-86de-29358f21fbba"
+    }
+  ]
+}
