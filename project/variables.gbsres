@@ -1,4 +1,25 @@
 {
   "_resourceType": "variables",
-  "variables": []
+  "variables": [
+    {
+      "id": "0",
+      "name": "IntroScenePlayed",
+      "symbol": "var_introsceneplayed"
+    },
+    {
+      "id": "1",
+      "name": "Task",
+      "symbol": "var_task"
+    },
+    {
+      "id": "2",
+      "name": "GoWatchTV",
+      "symbol": "var_gowatchtv"
+    },
+    {
+      "id": "3",
+      "name": "Day",
+      "symbol": "var_day"
+    }
+  ]
 }

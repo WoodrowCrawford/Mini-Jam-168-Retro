@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "01526dbc-246b-426e-a9b8-34beb90c1ab1",
+  "name": "DoorToBedRoom",
+  "prefabId": "",
+  "x": 6,
+  "y": 8,
+  "symbol": "trigger_1",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 4,
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "70e5b07e-65c3-4837-bbce-9b43c0e2d4b7",
+        "x": {
+          "type": "number",
+          "value": 20
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "left",
+        "fadeSpeed": 3
+      },
+      "id": "84670caf-a196-4b3b-9fba-9108b7e0b6fc"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

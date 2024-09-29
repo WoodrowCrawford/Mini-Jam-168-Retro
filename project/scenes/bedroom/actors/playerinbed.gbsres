@@ -1,0 +1,57 @@
+{
+  "_resourceType": "actor",
+  "id": "2851d946-3ed9-4192-be22-2e93dddacad6",
+  "name": "PlayerInBed",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8852235e-e0b0-43f5-ae49-429b5cafb108",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1",
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "true"
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "56959b01-8102-43b3-9ecc-1f0af74bc081"
+          }
+        ],
+        "false": []
+      },
+      "id": "e0d2fc9f-a70d-42d6-ba36-0eca340804ee"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 7,
+  "y": 8,
+  "_index": 1
+}

@@ -8,5 +8,6 @@
   "imageWidth": 224,
   "imageHeight": 160,
   "filename": "MoreTest.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

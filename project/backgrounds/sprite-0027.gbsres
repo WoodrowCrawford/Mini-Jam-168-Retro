@@ -8,5 +8,6 @@
   "imageWidth": 240,
   "imageHeight": 160,
   "filename": "Sprite-0027.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

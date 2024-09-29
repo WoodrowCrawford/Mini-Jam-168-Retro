@@ -12,7 +12,7 @@
     {
       "id": "86b996da-f323-4a57-a8f7-ae37964da493",
       "name": "",
-      "animationType": "multi_movement",
+      "animationType": "fixed",
       "flipLeft": true,
       "animations": [
         {
@@ -22,23 +22,10 @@
               "id": "fc7b8a5a-bda5-4e22-81f5-786af41911d4",
               "tiles": [
                 {
-                  "id": "b251bda6-46b8-4fda-8f96-c9622fcc8ca2",
-                  "x": 4,
+                  "id": "224671d2-9612-4e2e-8f59-c1d75dd2d2f3",
+                  "x": 0,
                   "y": 0,
                   "sliceX": 0,
-                  "sliceY": -2,
-                  "palette": 0,
-                  "flipX": false,
-                  "flipY": false,
-                  "objPalette": "OBP0",
-                  "paletteIndex": 0,
-                  "priority": false
-                },
-                {
-                  "id": "568becae-eff8-45dc-bbcb-b312d2b1655e",
-                  "x": 12,
-                  "y": 0,
-                  "sliceX": 8,
                   "sliceY": -2,
                   "palette": 0,
                   "flipX": false,
@@ -117,12 +104,12 @@
       ]
     }
   ],
-  "numTiles": 2,
-  "canvasWidth": 16,
+  "numTiles": 1,
+  "canvasWidth": 8,
   "canvasHeight": 16,
-  "boundsX": 4,
+  "boundsX": 0,
   "boundsY": 0,
-  "boundsWidth": 9,
-  "boundsHeight": 15,
+  "boundsWidth": 8,
+  "boundsHeight": 16,
   "animSpeed": 15
 }

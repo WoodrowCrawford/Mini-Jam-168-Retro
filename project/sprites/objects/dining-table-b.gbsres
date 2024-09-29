@@ -2,7 +2,7 @@
   "_resourceType": "sprite",
   "id": "937b260d-f4d8-49e8-9800-67587418127a",
   "name": "Objects/Dining-Table-B",
-  "symbol": "sprite_objects_dining_table_0",
+  "symbol": "sprite_objects_dining_table",
   "numFrames": 0.75,
   "filename": "Objects/Dining-Table-B.png",
   "checksum": "c3c514232fd3c9713939489b26c2c23688a81dc5",

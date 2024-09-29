@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "3fe39eaa-448e-4561-b85a-3b6ad9808f7b",
+  "name": "DoorToLivingRoom",
+  "prefabId": "",
+  "x": 23,
+  "y": 8,
+  "symbol": "trigger_0",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 4,
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "828516f8-1a51-4d32-bb66-a9455e309042",
+        "x": {
+          "type": "number",
+          "value": 8
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "right",
+        "fadeSpeed": 3
+      },
+      "id": "3e331d6e-ab10-4f1f-8d93-59c2046cae19"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 0
+}

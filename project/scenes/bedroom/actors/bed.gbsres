@@ -1,27 +1,84 @@
 {
   "_resourceType": "actor",
-  "id": "b01d770b-716e-4669-ade2-fcc4245ea96f",
+  "id": "cbef3401-26bc-405d-9b66-1ecf1e1c5929",
   "name": "Bed",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "2c0addd8-e6df-47dc-a421-59ea1e684089",
   "prefabId": "",
   "direction": "down",
-  "moveSpeed": 1,
-  "animSpeed": 15,
+  "moveSpeed": 0.25,
+  "animSpeed": 255,
   "paletteId": "",
   "isPinned": false,
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_0",
-  "script": [],
-  "startScript": [],
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "2"
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I want to watch TV\nyhidydydf\nfasdf\nasdf\nasdf"
+              ],
+              "__section": "behavior",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 2,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": 5,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "16e3cab5-7c4a-405f-a86e-92db32da8bb2"
+          }
+        ],
+        "false": []
+      },
+      "id": "3bbe64db-d701-489b-82ed-85cd2bcd50e6"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "98f3383a-c799-4ec3-86e6-1c273626e3d9"
+    }
+  ],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 8,
-  "y": 9,
+  "x": 7,
+  "y": 8,
   "_index": 0
 }

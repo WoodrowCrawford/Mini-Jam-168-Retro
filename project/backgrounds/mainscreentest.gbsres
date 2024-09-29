@@ -8,5 +8,6 @@
   "imageWidth": 192,
   "imageHeight": 144,
   "filename": "MainScreenTest.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }
