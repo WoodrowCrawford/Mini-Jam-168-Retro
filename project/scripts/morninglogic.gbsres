@@ -1,0 +1,233 @@
+{
+  "_resourceType": "script",
+  "id": "f8b7f5a7-bafe-44bc-9b1a-e354a2f74b19",
+  "name": "MorningLogic",
+  "description": "What happens when the player wakes up",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_13",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false,
+        "__label": "If first day",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The 1st day"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "d9e01e5c-723b-4331-857e-747f7a834514"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "0ccc9376-cc5f-4233-8f19-74723b0dc786",
+              "__collapse": true
+            },
+            "id": "18cdec80-da48-4ebd-9162-9033dca31c06"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": true
+            },
+            "id": "9be8bda5-ae7a-4044-9b7f-9c58ae6211d5"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "469fe855-4243-4192-b789-8b2f379fd438",
+              "__collapse": true
+            },
+            "id": "9c553e03-34c0-4c64-8cd1-99c305f65eb9"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "9",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "ce511772-2fc6-4d6d-a196-91c9b0d13a90"
+          }
+        ],
+        "false": []
+      },
+      "id": "4aa1d57e-8cdc-4043-a5f2-73a51e894d75"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true,
+        "__label": "If 2nd day",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "second day"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "8b571e89-6bec-43bb-89ab-53187d5f6f35"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "294733a7-c19c-4a27-ad61-751736bb00cc",
+              "__collapse": true
+            },
+            "id": "53563710-23a0-4c92-bb6c-d87706d8ac14"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": true
+            },
+            "id": "eefd37af-7b7f-4be7-8b6a-5c8c78b375ba"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "469fe855-4243-4192-b789-8b2f379fd438",
+              "__collapse": true
+            },
+            "id": "76a66f68-bd28-4fd3-8958-e90a0965e555"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "9",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "74cf9daf-60bb-4904-8d0e-dd8baa165876"
+          }
+        ],
+        "false": []
+      },
+      "id": "41764c09-bc6e-4215-848e-c4548a36dbb9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false,
+        "__label": "If 3rd day"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "third day"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "9b370506-a4c3-4988-9d3e-93cfa2c8bc30"
+          }
+        ],
+        "false": []
+      },
+      "id": "9bd98eff-ba12-4823-b2dd-7e3e4977e35a"
+    }
+  ]
+}

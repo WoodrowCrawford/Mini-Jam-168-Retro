@@ -1,0 +1,39 @@
+{
+  "_resourceType": "script",
+  "id": "0ccc9376-cc5f-4233-8f19-74723b0dc786",
+  "name": "WakeUpDialogue-Day1",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_14",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "...",
+          "Hmm...",
+          "Can't sleep...",
+          "I wanna watch\nTV!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "bde06481-8cd1-4d87-b15c-9e7d3d183fab"
+    }
+  ]
+}

@@ -55,7 +55,8 @@
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "3043a94e-40d1-47a5-9933-30103b0a8297",
-        "$actor[0]$": "0"
+        "$actor[0]$": "0",
+        "__collapse": true
       },
       "id": "f6778141-2ed7-41d8-8b44-c81c9ca6b13d"
     },
@@ -65,14 +66,16 @@
         "variable": "7",
         "value": {
           "type": "true"
-        }
+        },
+        "__collapse": true
       },
       "id": "53d43240-b094-4fbb-80b0-3f7faff9df36"
     },
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
-        "customEventId": "2600e8bb-bdd8-425b-8f3d-0005598f7f0f"
+        "customEventId": "2600e8bb-bdd8-425b-8f3d-0005598f7f0f",
+        "__collapse": true
       },
       "id": "6b92e161-437f-4a19-832c-9368b047f796"
     }

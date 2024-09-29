@@ -1,0 +1,71 @@
+{
+  "_resourceType": "script",
+  "id": "5d3d7198-8c66-487f-a5ac-365cd1a9ac35",
+  "name": "DreamDialogueDay2",
+  "description": "The 2nd dream",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_17",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You have a\ndream...",
+          "Once again, you're\na super hero!",
+          "You fly through\nthe sky as you\nusually do...",
+          "Who needs saving\nthis time?",
+          "After a few\nminutes of flying,\nyou hear a sound.",
+          "meow~",
+          "...!",
+          "It's a cat!",
+          "You start to look\nfor the animal.",
+          "Your supervision\nreally does come\nin handy!",
+          "You see a small\ncat stuck in a\ntree.",
+          "You sense its fear,\nand zoomed over \nthere to the\nrescue.",
+          "Upon getting\ncloser, you start\nto notice a red\ntruck. ",
+          "...",
+          "It was a\nfire truck!",
+          "Their ladder broke\nand they couldn't\nsave the cat...",
+          "One of the\nfirefighters\nlooked in your\ndirection,",
+          "\"Hey Mini Hero!!\nWe need your\nhelp!\"",
+          "\"Save this cat\nfor us please!\"",
+          "You nod, putting\neveryone at ease.",
+          "You reached the\ntop of the tree,\nand then...",
+          "...!",
+          "The cat jumped on\nyour head!",
+          "You kept your\nbalance, slowly\ndescending back\nto the ground.",
+          "The firefighter\nlooked at you\nwith praise.",
+          "\"Oh thank you,\nMini Hero!\"",
+          "\"What would we do\nwithout you?\"",
+          "...",
+          "You wake up\nfeeling good!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9452e275-c356-4382-b700-2693742abc07"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "55a904f8-0451-45ee-8c11-6a1465781d73"
+      },
+      "id": "be5ae2e9-38c5-4f24-a967-d4f48192125d"
+    }
+  ]
+}

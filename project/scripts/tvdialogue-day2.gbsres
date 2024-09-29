@@ -1,0 +1,76 @@
+{
+  "_resourceType": "script",
+  "id": "a81c7562-cf4e-4b12-ac32-485cc4f08b72",
+  "name": "TVDialogue-Day2",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_15",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The news is on\nright now.",
+          "They are talking\nabout a cat stuck\nin a tree...",
+          "You pay attention,\nwishing the best\nfor the kitten...",
+          "MEOW~ ",
+          "The cat is on the \nhighest point of \nthe tree.",
+          "It looks around, \nlooking for a way\ndown, to no avail.",
+          "A firefighter from\nbelow brings out a\ntall ladder.\n",
+          "It slowly started \nto ascend the\ntree... ",
+          "...!",
+          "Wow! It reached\nthe top!",
+          "The firefighter\nstarted climbing\nthe ladder...",
+          "\"Don't be scared,\nlittle guy!\nI got you!\"",
+          "The cat starred \nat the human\ncoming to its aid.",
+          "It looked a lot\nless worried!",
+          "The firefighter\nextended a hand\ntowards the cat...",
+          "\"This way!\"",
+          "Without a second\nthought, the cat\njumped onto his \nshoulder.",
+          "You sighed a\nbreath of relief.",
+          "Glad he\nended up saving\nthe cat!",
+          "You turn off the\nTV."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "3b9134f3-7cb6-4cc7-aa1d-fb9a229bd03b"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "3043a94e-40d1-47a5-9933-30103b0a8297",
+        "$actor[0]$": "0",
+        "__collapse": true
+      },
+      "id": "e737380e-99f8-4c85-b038-b274120fe1d5"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "274bbc0d-9b45-4c27-b73d-28ebe9bd659d"
+      },
+      "id": "64ea9e4e-afe4-4edc-a0fc-2850da18f092"
+    }
+  ]
+}

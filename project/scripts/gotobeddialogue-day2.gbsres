@@ -1,0 +1,46 @@
+{
+  "_resourceType": "script",
+  "id": "274bbc0d-9b45-4c27-b73d-28ebe9bd659d",
+  "name": "GoToBedDialogue-Day2",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_16",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "*yawn*",
+          "...",
+          "All that worrying\ntired me out!",
+          "I'm going to go\nto bed."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "285b80c8-1c7a-42dd-997b-370edf226f12"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "c03393e1-2acf-451e-a43c-7d76172a44f3"
+      },
+      "id": "b67d3d12-4807-4cb1-b208-9c1d1eedc138"
+    }
+  ]
+}

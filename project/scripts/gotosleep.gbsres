@@ -15,7 +15,8 @@
     {
       "command": "EVENT_ACTOR_HIDE",
       "args": {
-        "actorId": "$self$"
+        "actorId": "$self$",
+        "__collapse": true
       },
       "id": "0a491d8a-1fba-45d2-a975-b5bf677d560b"
     },
@@ -23,7 +24,8 @@
       "command": "EVENT_ACTOR_SET_SPRITE",
       "args": {
         "actorId": "0",
-        "spriteSheetId": "8852235e-e0b0-43f5-ae49-429b5cafb108"
+        "spriteSheetId": "8852235e-e0b0-43f5-ae49-429b5cafb108",
+        "__collapse": true
       },
       "id": "adde1125-9213-44e2-a846-191ef50d59d6"
     },
@@ -33,7 +35,7 @@
         "text": [
           "..."
         ],
-        "__section": "text",
+        "__section": "behavior",
         "avatarId": "",
         "minHeight": 4,
         "maxHeight": 7,
@@ -43,7 +45,7 @@
         "position": "bottom",
         "clearPrevious": true,
         "showFrame": "true",
-        "speedIn": 3,
+        "speedIn": -1,
         "speedOut": 3,
         "closeWhen": "key",
         "closeButton": "a",

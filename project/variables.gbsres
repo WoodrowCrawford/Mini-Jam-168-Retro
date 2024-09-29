@@ -60,6 +60,16 @@
       "id": "cbef3401-26bc-405d-9b66-1ecf1e1c5929__L0",
       "name": "goToSleep?",
       "symbol": "var_gotosleep_0"
+    },
+    {
+      "id": "9",
+      "name": "MoringDialoguePlayed",
+      "symbol": "var_moringdialogueplayed"
+    },
+    {
+      "id": "10",
+      "name": "WatchedTV-Day2",
+      "symbol": "var_watchedtv_day2"
     }
   ]
 }
