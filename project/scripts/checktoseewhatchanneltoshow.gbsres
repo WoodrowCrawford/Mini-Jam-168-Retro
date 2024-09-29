@@ -1,0 +1,70 @@
+{
+  "_resourceType": "script",
+  "id": "3fb61aaa-5abd-4ae7-b329-079fa40da6c9",
+  "name": "CheckToSeeWhatChannelToShow",
+  "description": "Checks to see what channel to show before turning on the tv",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_4",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "variable",
+                  "value": "2"
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "0",
+                    "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e"
+                  },
+                  "id": "5c6f44e1-ee67-4e03-aef9-64a5ccb344b6"
+                }
+              ],
+              "false": []
+            },
+            "id": "21320d45-06dc-4257-9987-dd59bd50bad3"
+          }
+        ],
+        "false": []
+      },
+      "id": "a37b4cf0-1f05-4cba-914c-2b2e16c7a1dd"
+    }
+  ]
+}

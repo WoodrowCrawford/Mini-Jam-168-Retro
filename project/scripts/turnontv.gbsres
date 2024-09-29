@@ -1,0 +1,24 @@
+{
+  "_resourceType": "script",
+  "id": "eb2a9b14-337f-4f67-b4e2-ac8606248c2e",
+  "name": "TurnOnTV",
+  "description": "Turns on the TV",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_0",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "3fb61aaa-5abd-4ae7-b329-079fa40da6c9",
+        "$actor[0]$": "0"
+      },
+      "id": "82cc0825-41f7-4b62-855c-2be21f28bf22"
+    }
+  ]
+}

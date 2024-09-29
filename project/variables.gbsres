@@ -20,6 +20,26 @@
       "id": "3",
       "name": "Day",
       "symbol": "var_day"
+    },
+    {
+      "id": "4",
+      "name": "CityShowOn",
+      "symbol": "var_cityshowon"
+    },
+    {
+      "id": "5",
+      "name": "TVOff",
+      "symbol": "var_tvoff"
+    },
+    {
+      "id": "7a5ac0c4-d93e-4b82-b930-aaedac2b1139__L0",
+      "name": "TurnOnTV?",
+      "symbol": "var_turnontv_"
+    },
+    {
+      "id": "6",
+      "name": "TVOn",
+      "symbol": "var_tvon"
     }
   ]
 }
