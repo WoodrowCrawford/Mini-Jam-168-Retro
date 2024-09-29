@@ -1,0 +1,31 @@
+{
+  "_resourceType": "script",
+  "id": "c03393e1-2acf-451e-a43c-7d76172a44f3",
+  "name": "SetGoToBedValue",
+  "description": "player needs to go to bed",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_8",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "8",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "82470159-5b1e-49cf-b66f-4e03b3836fce"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "121a3ef7-9109-48f2-9f5d-da58148db7f5"
+    }
+  ]
+}

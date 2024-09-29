@@ -39,7 +39,7 @@
             "command": "EVENT_ACTOR_HIDE",
             "args": {
               "actorId": "$self$",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "34e5d0c7-e5a5-45e2-8996-a696e067ffc8"
           },
@@ -80,16 +80,11 @@
             "id": "7b0437e4-6d6f-4a46-b67b-d70cd5b4676f"
           },
           {
-            "command": "EVENT_SET_VALUE",
+            "command": "EVENT_CALL_CUSTOM_EVENT",
             "args": {
-              "variable": "1",
-              "value": {
-                "type": "variable",
-                "value": "2"
-              },
-              "__collapse": true
+              "customEventId": "469fe855-4243-4192-b789-8b2f379fd438"
             },
-            "id": "b0934783-f8f4-45b1-8dd3-3bd44d4f29ec"
+            "id": "28589c4a-9bcc-449b-90ac-38d26659958f"
           },
           {
             "command": "EVENT_SET_VALUE",

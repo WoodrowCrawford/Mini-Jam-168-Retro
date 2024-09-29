@@ -19,6 +19,26 @@
         "$actor[0]$": "0"
       },
       "id": "82cc0825-41f7-4b62-855c-2be21f28bf22"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "23b52673-aed4-4b41-8e67-2ef8d87113ae"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "5",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "6d69288d-2168-4bd3-b10e-052ff7827e19"
     }
   ]
 }

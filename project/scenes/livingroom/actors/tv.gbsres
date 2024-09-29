@@ -17,54 +17,11 @@
   "symbol": "actor_6",
   "script": [
     {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "It's a TV!",
-          "Turn on the tv?"
-        ],
-        "__section": "text",
-        "avatarId": "",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30,
-        "__collapse": true
-      },
-      "id": "5a97537e-b61c-439d-9899-c439a2fcb550"
-    },
-    {
-      "command": "EVENT_CHOICE",
-      "args": {
-        "variable": "L0",
-        "trueText": "Yes",
-        "falseText": "No",
-        "__collapse": false
-      },
-      "id": "5ba74a2b-8b15-4fa0-8267-ff88f0a94a28"
-    },
-    {
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "L0"
-          },
-          "valueB": {
-            "type": "true"
-          }
+          "type": "variable",
+          "value": "2"
         },
         "__collapseElse": false,
         "__collapse": false
@@ -75,7 +32,8 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "You turned on the \nTV..."
+                "It's a TV!",
+                "Turn on the tv?"
               ],
               "__section": "text",
               "avatarId": "",
@@ -92,47 +50,149 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__collapse": true
             },
-            "id": "347fe7eb-d325-4efc-a447-f5c557b8ee60"
+            "id": "5a97537e-b61c-439d-9899-c439a2fcb550"
           },
           {
-            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "command": "EVENT_CHOICE",
             "args": {
-              "customEventId": "eb2a9b14-337f-4f67-b4e2-ac8606248c2e"
+              "variable": "L0",
+              "trueText": "Yes",
+              "falseText": "No",
+              "__collapse": false
             },
-            "id": "7312826d-1a10-45a7-b65a-6089b2e8c109"
+            "id": "5ba74a2b-8b15-4fa0-8267-ff88f0a94a28"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "true"
+                }
+              },
+              "__collapseElse": false,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You turned on the \nTV...",
+                      "..."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "347fe7eb-d325-4efc-a447-f5c557b8ee60"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "eb2a9b14-337f-4f67-b4e2-ac8606248c2e"
+                  },
+                  "id": "7312826d-1a10-45a7-b65a-6089b2e8c109"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You did not turn \non the TV."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "80f2cabd-79a9-4e91-85d8-d5e38f12f2af"
+                }
+              ]
+            },
+            "id": "fe11db83-b3a1-45b6-9896-f900c894e620"
           }
         ],
         "false": [
           {
-            "command": "EVENT_TEXT",
+            "command": "EVENT_IF",
             "args": {
-              "text": [
-                "You did not turn \non the TV."
-              ],
-              "__section": "text",
-              "avatarId": "",
-              "minHeight": 4,
-              "maxHeight": 7,
-              "textX": 1,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "bottom",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "key",
-              "closeButton": "a",
-              "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "condition": {
+                "type": "variable",
+                "value": "8"
+              },
+              "__collapseElse": true
             },
-            "id": "80f2cabd-79a9-4e91-85d8-d5e38f12f2af"
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "I'm too tired...\nI want to sleep."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "8a3de480-d092-4969-89fb-3e992269362b"
+                }
+              ],
+              "false": []
+            },
+            "id": "19df130e-5b0e-442f-ab0b-772102bbf3e3"
           }
         ]
       },
-      "id": "fe11db83-b3a1-45b6-9896-f900c894e620"
+      "id": "f7790935-fa33-4730-9f3d-ace35b2f29ed"
     }
   ],
   "startScript": [],

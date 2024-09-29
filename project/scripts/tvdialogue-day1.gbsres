@@ -1,0 +1,80 @@
+{
+  "_resourceType": "script",
+  "id": "3960dfd0-c028-4a72-8802-ece153dec87f",
+  "name": "TVDialogue-Day1",
+  "description": "The super hero show is on!",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_6",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "It's your favorite\nshow!",
+          "MEGA HERO!",
+          "It's about a hero\nthat stops crime..",
+          "One villain at a\ntime!",
+          "You watch with\neager eyes...",
+          "Mega hero is \nstopping a robbery\nat a bank...",
+          "\"Stop, thief!\nStealing money is\nwrong!\" \n",
+          "The villain smiled\nand laughed.",
+          "\"Hahaha and \nwhat are you going\nto do about it,\nHERO?\"",
+          "Mega hero then \nthrows his\nboomerang! ",
+          "It hits the\nvillain in the\nhead!",
+          "The villain gets\nknocked out.",
+          "\"OOF...\"",
+          "Yay! Another day\nsaved by Mega\nHero!",
+          "You turn off the \nTV."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "202d8b7f-c268-4dfb-b313-6713f1e52c53"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "3043a94e-40d1-47a5-9933-30103b0a8297",
+        "$actor[0]$": "0"
+      },
+      "id": "f6778141-2ed7-41d8-8b44-c81c9ca6b13d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "7",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "53d43240-b094-4fbb-80b0-3f7faff9df36"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "2600e8bb-bdd8-425b-8f3d-0005598f7f0f"
+      },
+      "id": "6b92e161-437f-4a19-832c-9368b047f796"
+    }
+  ]
+}

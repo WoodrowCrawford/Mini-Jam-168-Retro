@@ -1,0 +1,68 @@
+{
+  "_resourceType": "script",
+  "id": "28949a3c-3f4b-485d-b015-22a3ff50556a",
+  "name": "DreamDialogue-Day1",
+  "description": "The first dream",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_11",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You have a\ndream...",
+          "In it, you're a \nsuperhero!",
+          "You fly high in\nthe sky...",
+          "The entire city\nlooks so small!",
+          "But this is no\ntime to be \nsightseeing!",
+          "You have people\nto save!",
+          "Using your super\nvision, you notice\nsomething.",
+          "...!",
+          "An old lady is\ngetting mugged!",
+          "Without a second\nthought, you zoom\nto their location.",
+          "The old lady looks\nrelieved to see\nyou.",
+          "\"Oh thank heavens,\nit's Mini Hero!",
+          "The thief looks\nat you in a panic. ",
+          "\"Oh, Mini Hero!\nI was, just uh...\"",
+          "\"I was just\nhelping this poor\nlady cross the \nstreet!\"",
+          "The thief is \nclearly startled;\nsweat is forming \non his face.",
+          "It's a trap, but\nyou're too smart\nto fall for it!",
+          "You gave him a \ngood left hook.",
+          "POW!",
+          "\"UGH!\"",
+          "It sends him\nflying.",
+          "You watch as he\nflew all the way\ninto the city\njail.",
+          "The old woman \nlooks at you with\npraise.",
+          "\"My hero! Thank\nyou, Mini Hero!!!",
+          "...",
+          "You wake up\nfeeling good!"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "537a0dbd-dd4f-4ef7-b57d-8445009cbfdd"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "55a904f8-0451-45ee-8c11-6a1465781d73"
+      },
+      "id": "f4c9aff7-c8f4-4c0b-aaa7-9b674559754d"
+    }
+  ]
+}

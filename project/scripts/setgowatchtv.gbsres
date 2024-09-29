@@ -1,0 +1,31 @@
+{
+  "_resourceType": "script",
+  "id": "469fe855-4243-4192-b789-8b2f379fd438",
+  "name": "SetGoWatchTV",
+  "description": "The player wants to watch tv",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_9",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "2",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "7dac39b1-8f83-4eb6-bca5-46c8de68fed8"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "8",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "ebe1d7bc-3c50-4310-9dbd-5a0ecd214e67"
+    }
+  ]
+}

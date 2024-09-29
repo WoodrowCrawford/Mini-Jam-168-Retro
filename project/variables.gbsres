@@ -40,6 +40,26 @@
       "id": "6",
       "name": "TVOn",
       "symbol": "var_tvon"
+    },
+    {
+      "id": "7",
+      "name": "WatchedTVDay1",
+      "symbol": "var_watchedtvday1"
+    },
+    {
+      "id": "8",
+      "name": "GoToBed",
+      "symbol": "var_gotobed"
+    },
+    {
+      "id": "7a5ac0c4-d93e-4b82-b930-aaedac2b1139__L1",
+      "name": "GoToSleep?",
+      "symbol": "var_gotosleep_"
+    },
+    {
+      "id": "cbef3401-26bc-405d-9b66-1ecf1e1c5929__L0",
+      "name": "goToSleep?",
+      "symbol": "var_gotosleep_0"
     }
   ]
 }

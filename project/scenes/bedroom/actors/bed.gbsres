@@ -20,17 +20,10 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "1"
-          },
-          "valueB": {
-            "type": "variable",
-            "value": "2"
-          }
+          "type": "variable",
+          "value": "2"
         },
-        "__collapseElse": true
+        "__collapseElse": false
       },
       "children": {
         "true": [
@@ -38,31 +31,150 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "I want to watch TV\nyhidydydf\nfasdf\nasdf\nasdf"
+                "I want to watch\nTV."
               ],
-              "__section": "behavior",
+              "__section": "text",
               "avatarId": "",
               "minHeight": 4,
               "maxHeight": 7,
               "textX": 1,
               "textY": 1,
-              "textHeight": 2,
+              "textHeight": 5,
               "position": "bottom",
               "clearPrevious": true,
               "showFrame": "true",
-              "speedIn": 5,
+              "speedIn": -1,
               "speedOut": -1,
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30
             },
-            "id": "16e3cab5-7c4a-405f-a86e-92db32da8bb2"
+            "id": "a9a21d18-0e5b-4f92-b63c-354c5494b7cc"
           }
         ],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "8"
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Go to sleep?"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "ee1fc0c8-6941-48a7-93cb-1cff36b60aea"
+                },
+                {
+                  "command": "EVENT_CHOICE",
+                  "args": {
+                    "variable": "L0",
+                    "trueText": "Yes",
+                    "falseText": "No"
+                  },
+                  "id": "6611cd39-eb0d-406f-ac51-5d2b46e484bc"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "variable",
+                      "value": "L0"
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "726af7ee-b6fc-42a7-b0be-a47d763b0532"
+                        },
+                        "id": "c6b11444-1415-4db1-bd62-9edb2e40f440"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "not",
+                            "value": {
+                              "type": "variable",
+                              "value": "L0"
+                            }
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "You did not go \nto sleep."
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "6d1a1d3b-e3a0-49d3-a586-52dfed94ed12"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "437a7296-bfd9-474d-84af-770eee138601"
+                      }
+                    ]
+                  },
+                  "id": "cdf02c3d-8e3c-4b08-b82b-d7b247b318a1"
+                }
+              ],
+              "false": []
+            },
+            "id": "ea70aa4c-99c1-4829-bbc4-83024c258ac3"
+          }
+        ]
       },
-      "id": "3bbe64db-d701-489b-82ed-85cd2bcd50e6"
+      "id": "e80fe755-9a3c-4077-8618-8c30693ddac9"
     }
   ],
   "startScript": [

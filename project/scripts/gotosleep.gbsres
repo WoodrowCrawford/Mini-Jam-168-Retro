@@ -1,0 +1,73 @@
+{
+  "_resourceType": "script",
+  "id": "726af7ee-b6fc-42a7-b0be-a47d763b0532",
+  "name": "GoToSleep",
+  "description": "The player is now going to sleep",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_10",
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "0a491d8a-1fba-45d2-a975-b5bf677d560b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_SPRITE",
+      "args": {
+        "actorId": "0",
+        "spriteSheetId": "8852235e-e0b0-43f5-ae49-429b5cafb108"
+      },
+      "id": "adde1125-9213-44e2-a846-191ef50d59d6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "..."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": 3,
+        "speedOut": 3,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "0085c76f-bb75-4083-9e02-2c51612b8018"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "9f68b58e-787d-404a-a08d-f9d1ac038eee",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 1
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "d5369e33-1d59-45c9-a35f-ec73d8b682ec"
+    }
+  ]
+}

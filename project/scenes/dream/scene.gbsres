@@ -1,0 +1,38 @@
+{
+  "_resourceType": "scene",
+  "id": "9f68b58e-787d-404a-a08d-f9d1ac038eee",
+  "_index": 2,
+  "name": "Dream",
+  "backgroundId": "d09d8d4a-6c0e-4a94-bed8-5147e5c9fe8f",
+  "tilesetId": "",
+  "width": 30,
+  "height": 20,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 3,
+  "symbol": "scene_3",
+  "x": 530,
+  "y": 309,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "0963a027-6792-4831-8dbf-aba416ffff6a"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "28949a3c-3f4b-485d-b015-22a3ff50556a"
+      },
+      "id": "a0cdb9d6-252d-459d-8b61-7ab6cebd73c4"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": ""
+}

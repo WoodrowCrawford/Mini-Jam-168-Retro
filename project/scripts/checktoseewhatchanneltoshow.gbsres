@@ -34,17 +34,10 @@
             "command": "EVENT_IF",
             "args": {
               "condition": {
-                "type": "eq",
-                "valueA": {
-                  "type": "variable",
-                  "value": "1"
-                },
-                "valueB": {
-                  "type": "variable",
-                  "value": "2"
-                }
+                "type": "variable",
+                "value": "2"
               },
-              "__collapseElse": true
+              "__collapseElse": false
             },
             "children": {
               "true": [
@@ -52,14 +45,23 @@
                   "command": "EVENT_ACTOR_SET_SPRITE",
                   "args": {
                     "actorId": "0",
-                    "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e"
+                    "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e",
+                    "__collapse": true
                   },
                   "id": "5c6f44e1-ee67-4e03-aef9-64a5ccb344b6"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "3960dfd0-c028-4a72-8802-ece153dec87f",
+                    "__collapse": true
+                  },
+                  "id": "ef96b0f5-98b8-43b4-a6fc-7f6c81b37c0e"
                 }
               ],
               "false": []
             },
-            "id": "21320d45-06dc-4257-9987-dd59bd50bad3"
+            "id": "60f5b8ef-360b-4370-a3a6-932e01b44c06"
           }
         ],
         "false": []

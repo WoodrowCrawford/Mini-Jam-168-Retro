@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "d09d8d4a-6c0e-4a94-bed8-5147e5c9fe8f",
+  "name": "DreamRoom",
+  "symbol": "bg_dreamroom",
+  "width": 30,
+  "height": 20,
+  "imageWidth": 240,
+  "imageHeight": 160,
+  "filename": "DreamRoom.png",
+  "tileColors": ""
+}

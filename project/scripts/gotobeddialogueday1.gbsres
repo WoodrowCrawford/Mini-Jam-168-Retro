@@ -1,0 +1,43 @@
+{
+  "_resourceType": "script",
+  "id": "2600e8bb-bdd8-425b-8f3d-0005598f7f0f",
+  "name": "GoToBedDialogueDay1",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_7",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Im tired...\nIm going to bed."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "03d5d9d3-b168-4ee4-8f74-3e1060b77114"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "c03393e1-2acf-451e-a43c-7d76172a44f3"
+      },
+      "id": "6a8fe31b-8f84-4b75-a5ca-24fc6b81938f"
+    }
+  ]
+}
