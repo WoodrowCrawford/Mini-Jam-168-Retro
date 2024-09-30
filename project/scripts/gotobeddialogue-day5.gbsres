@@ -1,22 +1,24 @@
 {
   "_resourceType": "script",
-  "id": "faa690b4-4107-4fee-b588-961ec8852ccd",
-  "name": "WakeUpDialogue-Day4",
+  "id": "7a52f233-ca7d-4b65-b36f-de6ca9ffc1b4",
+  "name": "GoToBedDialogue-Day5",
   "description": "",
   "variables": {},
   "actors": {},
-  "symbol": "script_22",
+  "symbol": "script_28",
   "script": [
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
           "...",
-          "That was an\ninteresting \ndream...",
-          "...!",
-          "Oh yeah that's\nright!",
-          "There is a new\nepisode of\nMega Hero!!!",
-          "I want to go \nwatch it!"
+          "A missing boy?",
+          "And his face...",
+          "Haven't I seen\nthat face before? ",
+          "You suddenly get\nchills.",
+          "You feel scared\nand uneasy.",
+          "I.. think I should\ngo to bed...",
+          "Or at least try \nto..."
         ],
         "__section": "text",
         "avatarId": "",
@@ -35,7 +37,14 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "0b2231e3-87e5-4586-a93c-ea20704b335c"
+      "id": "42682e71-74bd-4ff2-b94c-70f4333ab70b"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "c03393e1-2acf-451e-a43c-7d76172a44f3"
+      },
+      "id": "51a6de8b-d7a1-4c43-b456-f6c32e813973"
     }
   ]
 }

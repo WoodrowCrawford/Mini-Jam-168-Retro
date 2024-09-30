@@ -61,7 +61,7 @@
       "args": {
         "customEventId": "3043a94e-40d1-47a5-9933-30103b0a8297",
         "$actor[0]$": "0",
-        "__collapse": true
+        "__collapse": false
       },
       "id": "e737380e-99f8-4c85-b038-b274120fe1d5"
     },

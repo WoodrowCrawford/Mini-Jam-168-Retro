@@ -194,7 +194,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": false,
+        "__collapse": true,
         "__label": "If 3rd day"
       },
       "children": {
@@ -280,7 +280,8 @@
           }
         },
         "__collapseElse": true,
-        "__label": "if 4th day"
+        "__label": "if 4th day",
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -349,6 +350,92 @@
         "false": []
       },
       "id": "09400531-1ea3-4aa9-847d-d617c2f3d813"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false,
+        "__label": "if 5th day"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The 5th day"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "03f4d525-aa90-4fe2-ae80-a5fc49471269"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "e1a73ba5-08ed-4efd-9441-d3ed2fe4e393",
+              "__collapse": true
+            },
+            "id": "c7b4999d-34be-48c8-a6b4-5ee512ac54f2"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "player",
+              "__collapse": true
+            },
+            "id": "56a9fb7e-d370-46d4-b9fa-8ee6120afe5f"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "469fe855-4243-4192-b789-8b2f379fd438",
+              "__collapse": true
+            },
+            "id": "a7effbdb-acbf-42d4-b1e6-e513266d2d34"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "9",
+              "value": {
+                "type": "true"
+              },
+              "__collapse": true
+            },
+            "id": "f2e91307-b2ff-49ef-8e41-94789fb0457d"
+          }
+        ],
+        "false": []
+      },
+      "id": "cbd88a98-4cb0-41e1-b588-2cb6b8c0376e"
     }
   ]
 }

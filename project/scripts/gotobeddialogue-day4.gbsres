@@ -1,22 +1,20 @@
 {
   "_resourceType": "script",
-  "id": "faa690b4-4107-4fee-b588-961ec8852ccd",
-  "name": "WakeUpDialogue-Day4",
+  "id": "3d7314da-2e60-48ff-a832-18fc62214fa1",
+  "name": "GoToBedDialogue-Day4",
   "description": "",
   "variables": {},
   "actors": {},
-  "symbol": "script_22",
+  "symbol": "script_24",
   "script": [
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "...",
-          "That was an\ninteresting \ndream...",
-          "...!",
-          "Oh yeah that's\nright!",
-          "There is a new\nepisode of\nMega Hero!!!",
-          "I want to go \nwatch it!"
+          "Man, that episode\nwas really\ninteresting!",
+          "I can't wait for\nthe next one!",
+          "*yawn*",
+          "I guess it's time for bed."
         ],
         "__section": "text",
         "avatarId": "",
@@ -35,7 +33,14 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "0b2231e3-87e5-4586-a93c-ea20704b335c"
+      "id": "16593728-ea5e-44c0-b00f-589951bf9388"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "c03393e1-2acf-451e-a43c-7d76172a44f3"
+      },
+      "id": "614f6a6c-57bc-43e9-9a6d-64f54e8ad07e"
     }
   ]
 }

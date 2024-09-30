@@ -1,22 +1,24 @@
 {
   "_resourceType": "script",
-  "id": "faa690b4-4107-4fee-b588-961ec8852ccd",
-  "name": "WakeUpDialogue-Day4",
+  "id": "e1a73ba5-08ed-4efd-9441-d3ed2fe4e393",
+  "name": "WakeUpDialogue-Day5",
   "description": "",
   "variables": {},
   "actors": {},
-  "symbol": "script_22",
+  "symbol": "script_26",
   "script": [
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
           "...",
-          "That was an\ninteresting \ndream...",
-          "...!",
-          "Oh yeah that's\nright!",
-          "There is a new\nepisode of\nMega Hero!!!",
-          "I want to go \nwatch it!"
+          "Okay, that was a\nweird dream...",
+          "I wonder what \nhappened to the\nboy?",
+          "...",
+          "I couldn't save\nhim...",
+          "...",
+          "I gotta take my\nmind off of this.",
+          "I'll watch TV to\ndistract me."
         ],
         "__section": "text",
         "avatarId": "",
@@ -33,9 +35,10 @@
         "closeWhen": "key",
         "closeButton": "a",
         "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "closeDelayFrames": 30,
+        "__collapse": true
       },
-      "id": "0b2231e3-87e5-4586-a93c-ea20704b335c"
+      "id": "794954b9-a908-4eeb-9d06-9689a37b14f7"
     }
   ]
 }

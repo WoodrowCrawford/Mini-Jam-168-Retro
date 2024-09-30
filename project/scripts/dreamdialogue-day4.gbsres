@@ -1,0 +1,54 @@
+{
+  "_resourceType": "script",
+  "id": "b75c6e30-0c80-4817-8267-3f35fa73a8b9",
+  "name": "DreamDialogue-Day4",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_25",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You have a strange\ndream...",
+          "You are a super\nhero again!",
+          "You hear someone\ncalling for help.",
+          "It sounds like a\nboy.",
+          "You look\neverywhere, but\nyou can't find\nhim.",
+          "\"...help me...\"",
+          "\"someone help me\nplease...\"",
+          "You looked in\ntrees, houses,\nbut nothing.\n",
+          "\"...save me...\"",
+          "The dream\nabruptly ends.",
+          "...",
+          "You wake up \nfeeling worried."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "b7b8edbf-5e32-4cce-8ac0-a78fa5f5dfb5"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "55a904f8-0451-45ee-8c11-6a1465781d73"
+      },
+      "id": "e4b48859-3ae0-41bf-bd4b-715adb1cffd0"
+    }
+  ]
+}

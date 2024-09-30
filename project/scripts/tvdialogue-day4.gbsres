@@ -1,0 +1,95 @@
+{
+  "_resourceType": "script",
+  "id": "6561f92e-501d-41ca-b229-ffb35bc22ec2",
+  "name": "TVDialogue-Day4",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_23",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Its your favorite\nshow!",
+          "MEGA HERO",
+          "This episode\nis special.",
+          "It's almost at \nits conclusion.",
+          "You watch with\neager eyes...",
+          "Mega Hero is at\na castle.",
+          "It's huge,\nwith lava\neverywhere.",
+          "At the top of the\ncastle lies his \narchenemy...",
+          "MEGA VILLAIN!",
+          "Sworn rivals at\nbirth, this fight \nwould change\neverything.",
+          "\"Mega Villain!\nI have come to \nstop your\nevil-doing!\"",
+          "A loud laugh\nechoed out...",
+          "\"HAHAHAHAHA!\"",
+          "\"You must be a\nfool to think you \ncan take me on \nalone!",
+          "Filled with\ncourage, the\nhero yelled with\nall his might:",
+          "\"I have traveled \nthe world,\nlearning how to\nuse my powers!\"",
+          "\"Everything I have\ndone, was for this\none moment!\"",
+          "\"I will stop you,\nand bring peace\non earth!\"",
+          "Then the fight\nbegan...",
+          "...",
+          "...!",
+          "It seems like \nMega Hero is\nstruggling!",
+          "Oh no!!",
+          "You continue\nwatching, face\ninches from the\nTV...",
+          "Mega Hero is on\nhis hands and\nknees, exhausted.",
+          "Mega Villain has\na devilish grin.",
+          "\"You may have been\nlearning and \nimproving your\npower...\"",
+          "\"But so have I!\"",
+          "\"We have the same\nability, you know\nthat?\"",
+          "\"That means we are\none in the same.\"",
+          "He pulls out a\ndagger...",
+          "\"It's a shame, if\nyou were more\nselfish...\"",
+          "\"We could have\nruled the world!\"",
+          "\"I guess I will \nhave to do it\nmyself...\"",
+          "Mega Villain walks\ncloser...",
+          "...",
+          "Then it ends!",
+          "Argh, they\nleft it on a\ncliffhanger!!!",
+          "You turn off the\nTV."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "eb07241e-8feb-4930-9a36-6b08c9bacbdc"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "3043a94e-40d1-47a5-9933-30103b0a8297",
+        "$actor[0]$": "0",
+        "__collapse": true
+      },
+      "id": "27d4c7f6-8d44-423c-9314-0736570a801f"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "3d7314da-2e60-48ff-a832-18fc62214fa1"
+      },
+      "id": "a5a0116a-363d-4269-985e-649c726599b7"
+    }
+  ]
+}

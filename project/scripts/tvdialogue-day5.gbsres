@@ -1,0 +1,66 @@
+{
+  "_resourceType": "script",
+  "id": "ca46833c-40d5-41f7-810d-c88567197c2f",
+  "name": "TVDialogue-Day5",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_27",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The news is on\nagain.",
+          "They are talking\nabout a missing\nboy.",
+          "A missing boy?",
+          "...",
+          "You anxiously \nwatch the screen.",
+          "A picture of him\nshows up.",
+          "\"A boy, around age\n10, disappeared\nsuddenly.\"",
+          "\"We have no idea\nwhere his last\nlocation was...\" ",
+          "\"But we have intel\nthat he typically\nwould ",
+          "stay inside\nand watch TV.\"",
+          "\"If anyone has\nany info\nregarding this...\"",
+          "\"Please reach out \nat xxx-xxx-xxxx\nASAP.\"",
+          "\"His parents are \nworried sick.\"",
+          "The news ends\nthere.",
+          "...",
+          "You turn the TV\noff."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "3fbfbb2d-32ee-48ff-a594-87327a047693"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "3043a94e-40d1-47a5-9933-30103b0a8297",
+        "__collapse": true
+      },
+      "id": "18668322-9180-42b6-82e4-9d64e8c83990"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "7a52f233-ca7d-4b65-b36f-de6ca9ffc1b4"
+      },
+      "id": "aa0c5f74-a09b-43da-b437-3518d3bcd573"
+    }
+  ]
+}
