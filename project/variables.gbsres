@@ -32,11 +32,6 @@
       "symbol": "var_tvoff"
     },
     {
-      "id": "7a5ac0c4-d93e-4b82-b930-aaedac2b1139__L0",
-      "name": "TurnOnTV?",
-      "symbol": "var_turnontv_"
-    },
-    {
       "id": "6",
       "name": "TVOn",
       "symbol": "var_tvon"
@@ -52,16 +47,6 @@
       "symbol": "var_gotobed"
     },
     {
-      "id": "7a5ac0c4-d93e-4b82-b930-aaedac2b1139__L1",
-      "name": "GoToSleep?",
-      "symbol": "var_gotosleep_"
-    },
-    {
-      "id": "cbef3401-26bc-405d-9b66-1ecf1e1c5929__L0",
-      "name": "goToSleep?",
-      "symbol": "var_gotosleep_0"
-    },
-    {
       "id": "9",
       "name": "MoringDialoguePlayed",
       "symbol": "var_moringdialogueplayed"
@@ -70,6 +55,21 @@
       "id": "10",
       "name": "WatchedTV-Day2",
       "symbol": "var_watchedtv_day2"
+    },
+    {
+      "id": "7a5ac0c4-d93e-4b82-b930-aaedac2b1139__L0",
+      "name": "TurnOnTV?",
+      "symbol": "var_turnontv_"
+    },
+    {
+      "id": "7a5ac0c4-d93e-4b82-b930-aaedac2b1139__L1",
+      "name": "GoToSleep?",
+      "symbol": "var_gotosleep_"
+    },
+    {
+      "id": "cbef3401-26bc-405d-9b66-1ecf1e1c5929__L0",
+      "name": "goToSleep?",
+      "symbol": "var_gotosleep_0"
     }
   ]
 }
