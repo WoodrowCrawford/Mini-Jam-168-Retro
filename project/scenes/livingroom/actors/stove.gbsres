@@ -1,10 +1,10 @@
 {
   "_resourceType": "actor",
-  "id": "0da45fa2-3dcb-4fc3-81e7-2157c7e8a012",
-  "name": "Counter",
+  "id": "7453eea5-1a10-4cf3-9afb-1a54014049ca",
+  "name": "Stove",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "c46de2fd-18d1-4cff-ab45-cff2c14c8eaf",
+  "spriteSheetId": "f754f1e9-1cc2-4a95-b97e-e44ff4b5eb9c",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -14,14 +14,14 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_5",
+  "symbol": "actor_7",
   "script": [],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 20,
+  "x": 10,
   "y": 6,
-  "_index": 0
+  "_index": 2
 }

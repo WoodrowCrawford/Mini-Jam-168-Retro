@@ -1,0 +1,61 @@
+{
+  "_resourceType": "script",
+  "id": "342b4df4-c815-426b-acd9-115c82fc18a5",
+  "name": "TVDialogue-Day6",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_31",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "It's your favorite\nshow!",
+          "MEGA HERO!",
+          "This is the final\nepisode.",
+          "You wonder how\nit's going to end.",
+          "You watch with\neager eyes...",
+          "It resumes from \nwhere it left off\nlast episode...",
+          "Mega hero is on\nthe ground,",
+          "Completely \ndefenseless.",
+          "He is too worn out\nfrom the fight.",
+          "Mega villain\nwalks towards\nhim, ",
+          "Dagger in hand.",
+          "He stops right at\nMega Hero's body.",
+          "\"Any last words\nMega Hero?\"",
+          "Mega Hero barely \nspeaks, but he \neventually says:",
+          "\"...As long as I \nwas able save one\nlife...\"",
+          "\"...Then my duty \nas a hero has been\nfulfilled.\"",
+          "Mega Villain\nlaughs.",
+          "\"And yet, it's a\nshame.\"",
+          "\"You save the\nlives of\nothers...\"",
+          "\"But no one will\nbe there to save \nyou.\"",
+          "And with that...",
+          "Mega Villain dealt\nthe final blow.",
+          "Everything went\nsilent.",
+          "You watch as Mega\nHero takes his\nlast breath.",
+          "...",
+          "Mega Villain turns\nto face the screen\n"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "3c19db8d-2882-47c5-b8e7-27098bd5c56f"
+    }
+  ]
+}

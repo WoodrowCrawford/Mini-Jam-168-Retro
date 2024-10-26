@@ -1,0 +1,50 @@
+{
+  "_resourceType": "script",
+  "id": "963c8ec3-603c-48ff-ba52-be151550fad7",
+  "name": "WakeUpDialogue-Day6",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_30",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!!!",
+          "My heart won't\nstop beating so\nfast...",
+          "Just was sort of\ndream, no...",
+          "What was that\nnightmare?",
+          "\"Let me out?\"",
+          "Does that mean\nhe's trapped?",
+          "But where?",
+          "...",
+          "No. Thinking about\nthis is creepy.",
+          "I just need to\nforget about it.",
+          "...",
+          "Oh yeah!",
+          "The final episode\nof Mega Hero is\nout!",
+          "I'm gonna go watch\nit.",
+          "Hopefully that\nwould take my mind\nof things."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "1080faf7-696e-48eb-9709-69f18acd3dad"
+    }
+  ]
+}

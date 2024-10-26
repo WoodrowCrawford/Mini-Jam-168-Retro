@@ -1,20 +1,28 @@
 {
   "_resourceType": "script",
-  "id": "3d7314da-2e60-48ff-a832-18fc62214fa1",
-  "name": "GoToBedDialogue-Day4",
+  "id": "f560b08e-0f7b-44aa-ada1-ba43c74646eb",
+  "name": "DreamDialogue-Day5",
   "description": "",
   "variables": {},
   "actors": {},
-  "symbol": "script_24",
+  "symbol": "script_29",
   "script": [
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "Man, that episode\nwas really\ninteresting!",
-          "I can't wait for\nthe next one!",
-          "*yawn*",
-          "I guess it's time\nfor bed."
+          "You have a\nnightmare.",
+          "It's pitch black.",
+          "You can't see\nanything.",
+          "You hear a\nfamiliar voice...",
+          "It's the boy.",
+          "He sounds\nterrified.",
+          "\"LET ME GO!\"",
+          "\"PLEASE SOMEONE,\nANYONE!\"",
+          "\"LET ME OUT OF\nHERE!\"",
+          "Then the dream\nends.",
+          "...",
+          "You wake up\nfeeling scared."
         ],
         "__section": "text",
         "avatarId": "",
@@ -33,14 +41,14 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "16593728-ea5e-44c0-b00f-589951bf9388"
+      "id": "1d643833-ca00-40c1-a385-ebc70b8907d3"
     },
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
-        "customEventId": "c03393e1-2acf-451e-a43c-7d76172a44f3"
+        "customEventId": "55a904f8-0451-45ee-8c11-6a1465781d73"
       },
-      "id": "614f6a6c-57bc-43e9-9a6d-64f54e8ad07e"
+      "id": "7bd59cbe-8927-4ad7-8fc1-f23e4c129868"
     }
   ]
 }
