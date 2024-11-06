@@ -1,0 +1,55 @@
+{
+  "_resourceType": "script",
+  "id": "63975bbd-0945-4636-9837-866d7beeec81",
+  "name": "DreamDialogue-Day6",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_33",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You have another\nnightmare.",
+          "It's pitch black.",
+          "You hear loud\nbanging, followed\nby screams.",
+          "\"HELP ME HELP ME\nHELP ME HELP ME\"",
+          "IT's the boy.",
+          "His screams are\ndeafening.",
+          "You cover your\nears.",
+          "You feel bad for\ntrying to tune\nhim out,",
+          "But the screams\nare too much.",
+          "\"LET ME OUT LET\nME OUT LET ME OUT\"",
+          "Even though you\ncovered your ears,",
+          "You can still hear\nhis screams of\nagony.",
+          "You suddenly\njolt awake."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "4627888c-00e9-4f3f-8af4-77f4a4fbedcb"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "55a904f8-0451-45ee-8c11-6a1465781d73"
+      },
+      "id": "4fbbe8e9-f36e-4019-a7ab-b860cab38911"
+    }
+  ]
+}

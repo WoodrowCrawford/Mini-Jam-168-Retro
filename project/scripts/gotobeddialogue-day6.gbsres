@@ -1,0 +1,45 @@
+{
+  "_resourceType": "script",
+  "id": "301d625c-27ed-4b61-993a-755a8e1ae8e5",
+  "name": "GoToBedDialogue-Day6",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_32",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You sit there in\nsilence for a\nmoment.",
+          "Trying to process\nwhat just\nhappened.",
+          "Mega Hero...died?",
+          "But he's the main\ncharacter!",
+          "How can the show\ncontinue?",
+          "A tear falls down\nyour cheek.",
+          "You know it's\njust a show but...",
+          "You can't help\nbut cry.",
+          "...",
+          "I think I'm\njust gonna cry\nmyself to sleep..."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "589f62e3-1a7f-4e4a-bc82-7f96899e86b8"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "_resourceType": "script",
+  "id": "301157d2-c6fa-4685-8efa-3395e09f3e2c",
+  "name": "WakeUpDialogue-Day7",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_34",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!!!",
+          "I cant sleep.",
+          "That dream was way\ntoo loud.",
+          "And that\nbanging...",
+          "It's like I can\nstill hear it.",
+          "...",
+          "Wait a second...",
+          "*Bang bang bang*",
+          "No wait I\nDEFINITLY hear\nsomething.",
+          "It sounds like\nit's coming\nfrom...",
+          "The living room??",
+          "This is scary\nbut...",
+          "I guess I should\ncheck it out."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "809b850e-0cb1-457f-83c7-68f6244a0141"
+    }
+  ]
+}

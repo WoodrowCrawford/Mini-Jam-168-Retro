@@ -23,8 +23,8 @@
           "type": "variable",
           "value": "2"
         },
-        "__collapseElse": false,
-        "__collapse": false
+        "__collapseElse": true,
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -193,6 +193,95 @@
         ]
       },
       "id": "f7790935-fa33-4730-9f3d-ace35b2f29ed"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 6
+          }
+        },
+        "__collapseElse": true,
+        "__label": "If 6th day",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "eb2a9b14-337f-4f67-b4e2-ac8606248c2e"
+            },
+            "id": "af711026-dce7-4908-9219-edead6e5b032"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "1f1d15fa-5105-439d-ac79-757ccd71a297"
+            },
+            "id": "c9ebd816-2ab8-4a4c-be8a-16c758fbcf8b"
+          }
+        ],
+        "false": []
+      },
+      "id": "bd077b67-f35c-4e4f-8c52-7c6c127adbe8"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "true"
+          }
+        },
+        "__collapseElse": false,
+        "__collapse": false,
+        "__label": "If tv is on"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "tv is on"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "7505072b-720e-4397-ba04-4e695bb6e361"
+          }
+        ],
+        "false": []
+      },
+      "id": "a9a521d3-ecb9-4ece-b8b4-137aa8f2658d"
     }
   ],
   "startScript": [],
