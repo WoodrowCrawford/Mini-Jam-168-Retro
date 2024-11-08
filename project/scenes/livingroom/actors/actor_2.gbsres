@@ -1,10 +1,10 @@
 {
   "_resourceType": "actor",
-  "id": "0da45fa2-3dcb-4fc3-81e7-2157c7e8a012",
-  "name": "Counter",
+  "id": "f0780d9f-47b2-400d-9f57-93c4394db87f",
+  "name": "",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "c46de2fd-18d1-4cff-ab45-cff2c14c8eaf",
+  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -21,7 +21,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 20,
+  "x": 21,
   "y": 6,
-  "_index": 0
+  "_index": 3
 }

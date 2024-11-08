@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "cbcd1e02-030d-4135-961c-0bd6b93858ab",
+  "name": "Bathroom",
+  "symbol": "bg_bathroom",
+  "width": 30,
+  "height": 20,
+  "imageWidth": 240,
+  "imageHeight": 160,
+  "filename": "Bathroom.png",
+  "tileColors": ""
+}

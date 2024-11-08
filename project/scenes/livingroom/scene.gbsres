@@ -19,5 +19,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "playerSpriteSheetId": "2462b4a9-1d4b-408a-93ad-0c5eae98a225"
+  "playerSpriteSheetId": "2462b4a9-1d4b-408a-93ad-0c5eae98a225",
+  "labelColor": "green"
 }

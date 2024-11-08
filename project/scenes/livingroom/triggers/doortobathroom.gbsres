@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "d3c85bb1-a74a-47fc-8f16-15e6e804b905",
+  "name": "DoorToBathroom",
+  "prefabId": "",
+  "x": 23,
+  "y": 8,
+  "symbol": "trigger_2",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 4,
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "7e143efc-20c9-4e7f-a3f3-8d85bb909ea6",
+        "x": {
+          "type": "number",
+          "value": 12
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "right",
+        "fadeSpeed": 3
+      },
+      "id": "4dd195de-91c3-4a6d-b089-935b4cb1704a"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

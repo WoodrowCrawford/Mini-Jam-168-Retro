@@ -13,8 +13,8 @@
   "collisions": "",
   "autoFadeSpeed": 3,
   "symbol": "scene_3",
-  "x": 530,
-  "y": 309,
+  "x": 608,
+  "y": 336,
   "script": [
     {
       "command": "EVENT_ACTOR_HIDE",
@@ -181,5 +181,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "playerSpriteSheetId": ""
+  "playerSpriteSheetId": "",
+  "labelColor": "purple"
 }

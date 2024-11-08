@@ -34,7 +34,7 @@
             "command": "EVENT_CALL_CUSTOM_EVENT",
             "args": {
               "customEventId": "f8b7f5a7-bafe-44bc-9b1a-e354a2f74b19",
-              "__collapse": true
+              "__collapse": false
             },
             "id": "2f4074f5-5e24-4e23-a1be-87c69200365a"
           }
@@ -55,6 +55,6 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "labelColor": "orange",
+  "labelColor": "red",
   "autoFadeEventCollapse": false
 }

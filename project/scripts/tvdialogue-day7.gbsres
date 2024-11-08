@@ -1,0 +1,168 @@
+{
+  "_resourceType": "script",
+  "id": "3bb78c2b-2177-452d-bf9e-ce7283948c3b",
+  "name": "TVDIalogue-Day7",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_35",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"Don't just shut\nme out!\"",
+          "\"Help me please!\"",
+          "\"I've been trapped\nhere for a while.\"",
+          "\"I really miss my\nfamily.\"",
+          "You stare at the\ntv screen.",
+          "You want to feel\nscared, but...",
+          "You feel like you\nknow this kid.",
+          "Of course, the\nfact that the\ntv is speaking...",
+          "It is still a \nlittle concerning.",
+          "But this is your\nchance to be a\nhero and help!",
+          "You ask what you\ncan do to help.",
+          "\"Wait really?\"",
+          "\"You're just gonna\nhelp no questions\nasked?\"\n",
+          "\"Aren't you\ncurious how I got\nstuck here?\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "5b18a4af-f285-434e-b0ff-18a9fd907703"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "V0",
+        "trueText": "Yeah",
+        "falseText": "Not really, No"
+      },
+      "id": "9c5748d5-9f4c-4485-9e87-fead69450423"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "\"Well I'm glad\nyou asked!\"",
+                "\"Honestly, my\nmemory is hazy.\"",
+                "\"I remember being\nhome...\"",
+                "\"I definitely\nremember talking\nto someone...\"",
+                "\"But that's it.\"",
+                "\"After that,\nthings went dark.\"",
+                "\"Occasionally,\nI see you on the\nother side.\"",
+                "\"I call out, but\nyou never hear\nme.\"",
+                "\"I'm really glad I\ngot through to\nyou though.\""
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": false
+            },
+            "id": "f8b82b8a-ddd8-4b88-b0c2-4bc14749ebbd"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "\"Oh, okay, that's\nfine I guess...\"",
+                "\"...\""
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "6145b82a-c7d4-43bf-98a0-a1f722b806b5"
+          }
+        ]
+      },
+      "id": "f71df1ed-e2f5-4b27-b334-30cf2d12ab95"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "\"In order for you\nto help me\""
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "20267be7-e367-4bcd-a55e-ed0b3d68c130"
+    }
+  ]
+}
