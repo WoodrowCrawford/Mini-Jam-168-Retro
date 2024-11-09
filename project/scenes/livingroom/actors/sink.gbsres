@@ -1,10 +1,10 @@
 {
   "_resourceType": "actor",
-  "id": "f0780d9f-47b2-400d-9f57-93c4394db87f",
-  "name": "",
+  "id": "810c9429-e860-4d79-92cf-f8b8a4fcabb4",
+  "name": "Sink",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+  "spriteSheetId": "4794a765-17da-46c4-856f-d20ec20983f9",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -14,14 +14,14 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_5",
+  "symbol": "actor_8",
   "script": [],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 21,
+  "x": 7,
   "y": 6,
-  "_index": 3
+  "_index": 2
 }

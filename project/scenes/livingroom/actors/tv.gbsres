@@ -29,8 +29,8 @@
             "type": "true"
           }
         },
-        "__collapseElse": true,
-        "__collapse": true,
+        "__collapseElse": false,
+        "__collapse": false,
         "__label": "If tv is on 1st time"
       },
       "children": {
@@ -116,7 +116,7 @@
         },
         "__collapseElse": true,
         "__label": "If tv is on 2nd time",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -134,7 +134,8 @@
                   "value": 1
                 }
               },
-              "__collapseElse": true
+              "__collapseElse": true,
+              "__collapse": true
             },
             "children": {
               "true": [
@@ -219,13 +220,12 @@
             "value": "6"
           },
           "valueB": {
-            "type": "number",
-            "value": 1
+            "type": "true"
           }
         },
         "__collapseElse": true,
         "__label": "If tv is on 3rd time",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -314,6 +314,13 @@
                     "customEventId": "3bb78c2b-2177-452d-bf9e-ce7283948c3b"
                   },
                   "id": "701b1a6f-66e4-412f-91a2-d340d4f83e23"
+                },
+                {
+                  "command": "EVENT_STOP",
+                  "args": {
+                    "__collapse": false
+                  },
+                  "id": "370d42c4-9dcb-428a-89bc-49a62867ceec"
                 }
               ],
               "false": []
@@ -526,6 +533,54 @@
         "false": []
       },
       "id": "f459f804-2fab-41eb-8678-04c185aa6ea2"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "13"
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It works"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "3897ae1a-4112-4b8a-a26e-3d2777ad3d9f"
+          }
+        ],
+        "false": []
+      },
+      "id": "b222affe-08f0-447e-a817-4ab2656c4b43"
     }
   ],
   "startScript": [

@@ -143,7 +143,17 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "\"In order for you\nto help me\""
+          "\"If you want to\nhelp me...\"",
+          "\"You need to speak\ninto a mirror.\"",
+          "\"Just say the\nwords:\"",
+          "\"Let him go.\"",
+          "...",
+          "\"Oh wait I almost\nforgot!\"",
+          "\"You have to say\nthat 5 times.\"",
+          "\"After you do\nthat...\"",
+          "\"I should be\nfree.\"",
+          "\"Now first things\nfirst.\"",
+          "\"Where can we find\na mirror?\""
         ],
         "__section": "text",
         "avatarId": "",
@@ -163,6 +173,17 @@
         "closeDelayFrames": 30
       },
       "id": "20267be7-e367-4bcd-a55e-ed0b3d68c130"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "variable",
+          "value": "13"
+        }
+      },
+      "id": "d1c27032-3595-4a99-8c58-d3386cd29a35"
     }
   ]
 }
