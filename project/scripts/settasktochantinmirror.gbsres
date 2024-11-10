@@ -1,0 +1,22 @@
+{
+  "_resourceType": "script",
+  "id": "3eb6db9a-650f-45a4-9495-f65240fc84fe",
+  "name": "SetTaskToChantInMirror",
+  "description": "Sets the task to chant in mirror",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_39",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "8fbf2543-6bf9-47fc-b0a5-8c530a7689cc"
+    }
+  ]
+}

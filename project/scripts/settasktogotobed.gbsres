@@ -1,0 +1,22 @@
+{
+  "_resourceType": "script",
+  "id": "efc38bd0-56eb-4248-8c0f-d6a226eff594",
+  "name": "SetTaskToGoToBed",
+  "description": "Sets the task to go to bed",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_38",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "d690a930-5fd7-4af5-818d-98378467f73e"
+    }
+  ]
+}

@@ -4,7 +4,12 @@
   "name": "TVDialogue-Day5",
   "description": "",
   "variables": {},
-  "actors": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
   "symbol": "script_27",
   "script": [
     {
@@ -50,7 +55,8 @@
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
-        "customEventId": "3043a94e-40d1-47a5-9933-30103b0a8297",
+        "customEventId": "ce131432-e306-456a-9957-258662cb82f8",
+        "$actor[0]$": "0",
         "__collapse": true
       },
       "id": "18668322-9180-42b6-82e4-9d64e8c83990"

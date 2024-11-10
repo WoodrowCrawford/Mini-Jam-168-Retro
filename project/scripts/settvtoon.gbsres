@@ -1,0 +1,36 @@
+{
+  "_resourceType": "script",
+  "id": "c63120a0-d2c3-4066-b12d-534deea76a9e",
+  "name": "SetTVToOn",
+  "description": "Turns on the tv\nsets the value to 1",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_40",
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "3fb61aaa-5abd-4ae7-b329-079fa40da6c9",
+        "$actor[0]$": "0",
+        "__collapse": false
+      },
+      "id": "2b00da7c-82b9-4a67-b80e-801871683d54"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "14",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "167d6768-a31d-4390-97c3-7dcc09df7ff3"
+    }
+  ]
+}

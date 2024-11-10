@@ -1,0 +1,22 @@
+{
+  "_resourceType": "script",
+  "id": "9ef6642e-9b39-45ff-b98f-e1b4dfd5aa7f",
+  "name": "SetTaskToWatchTV",
+  "description": "Sets the task to go watch tv",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_37",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "ffa77ed3-af96-44d2-baae-a50ef61a765b"
+    }
+  ]
+}

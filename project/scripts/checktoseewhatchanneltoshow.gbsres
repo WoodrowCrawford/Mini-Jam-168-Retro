@@ -28,7 +28,7 @@
         },
         "__collapseElse": true,
         "__label": "If 1st day",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -36,11 +36,19 @@
             "command": "EVENT_IF",
             "args": {
               "condition": {
-                "type": "variable",
-                "value": "2"
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
               },
-              "__collapseElse": false,
-              "__collapse": false
+              "__collapseElse": true,
+              "__collapse": false,
+              "__label": "If task is to go watch tv"
             },
             "children": {
               "true": [
@@ -64,7 +72,7 @@
               ],
               "false": []
             },
-            "id": "60f5b8ef-360b-4370-a3a6-932e01b44c06"
+            "id": "95bdcc8d-c177-4900-b1b6-bec8ad2b6827"
           }
         ],
         "false": []
@@ -92,21 +100,46 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_ACTOR_SET_SPRITE",
+            "command": "EVENT_IF",
             "args": {
-              "actorId": "0",
-              "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e",
-              "__collapse": false
-            },
-            "id": "743306d7-ece5-43e7-bc70-1e1374377419"
-          },
-          {
-            "command": "EVENT_CALL_CUSTOM_EVENT",
-            "args": {
-              "customEventId": "a81c7562-cf4e-4b12-ac32-485cc4f08b72",
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__label": "if task is to go watch tv",
               "__collapse": true
             },
-            "id": "7e85c788-5786-4611-8566-340eaaf9bf6b"
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "0",
+                    "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e",
+                    "__collapse": true
+                  },
+                  "id": "743306d7-ece5-43e7-bc70-1e1374377419"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "a81c7562-cf4e-4b12-ac32-485cc4f08b72",
+                    "__collapse": true
+                  },
+                  "id": "7e85c788-5786-4611-8566-340eaaf9bf6b"
+                }
+              ],
+              "false": []
+            },
+            "id": "71e502b6-2d0f-4da9-9720-dd26fdb2c6e8"
           }
         ],
         "false": []
@@ -134,21 +167,46 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_ACTOR_SET_SPRITE",
+            "command": "EVENT_IF",
             "args": {
-              "actorId": "0",
-              "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e",
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__label": "if task is to watch tv",
               "__collapse": true
             },
-            "id": "52485ce8-1ce9-47eb-be93-aa3b842a5593"
-          },
-          {
-            "command": "EVENT_CALL_CUSTOM_EVENT",
-            "args": {
-              "customEventId": "d860a294-840b-49b4-9948-1a5cf739da08",
-              "__collapse": true
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "0",
+                    "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e",
+                    "__collapse": true
+                  },
+                  "id": "52485ce8-1ce9-47eb-be93-aa3b842a5593"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "d860a294-840b-49b4-9948-1a5cf739da08",
+                    "__collapse": true
+                  },
+                  "id": "b96d0321-3457-4507-b821-7900f77a84bc"
+                }
+              ],
+              "false": []
             },
-            "id": "b96d0321-3457-4507-b821-7900f77a84bc"
+            "id": "134256d7-f706-499d-9fbd-d4079031a500"
           }
         ],
         "false": []
@@ -171,25 +229,51 @@
         },
         "__collapseElse": true,
         "__label": "if 4th day",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
           {
-            "command": "EVENT_ACTOR_SET_SPRITE",
+            "command": "EVENT_IF",
             "args": {
-              "actorId": "0",
-              "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e",
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__label": "if task is to watch tv",
               "__collapse": false
             },
-            "id": "30dd7971-ad22-4b15-a536-7eef344b7f2a"
-          },
-          {
-            "command": "EVENT_CALL_CUSTOM_EVENT",
-            "args": {
-              "customEventId": "6561f92e-501d-41ca-b229-ffb35bc22ec2"
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "0",
+                    "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e",
+                    "__collapse": true
+                  },
+                  "id": "30dd7971-ad22-4b15-a536-7eef344b7f2a"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "6561f92e-501d-41ca-b229-ffb35bc22ec2",
+                    "__collapse": true
+                  },
+                  "id": "d29b766c-4409-4636-9231-8cf5a032fff3"
+                }
+              ],
+              "false": []
             },
-            "id": "d29b766c-4409-4636-9231-8cf5a032fff3"
+            "id": "1b07552c-b4f1-4d23-af7c-43f532f8e74d"
           }
         ],
         "false": []
@@ -217,20 +301,46 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_ACTOR_SET_SPRITE",
+            "command": "EVENT_IF",
             "args": {
-              "actorId": "0",
-              "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e",
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__label": "if task is to watch tv",
               "__collapse": false
             },
-            "id": "5e50ea8c-4544-4f36-9e29-fb4411bb8d07"
-          },
-          {
-            "command": "EVENT_CALL_CUSTOM_EVENT",
-            "args": {
-              "customEventId": "ca46833c-40d5-41f7-810d-c88567197c2f"
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "0",
+                    "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e",
+                    "__collapse": true
+                  },
+                  "id": "5e50ea8c-4544-4f36-9e29-fb4411bb8d07"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "ca46833c-40d5-41f7-810d-c88567197c2f",
+                    "__collapse": true
+                  },
+                  "id": "14d6f350-01c0-4ff7-9f74-b75b25c27d9d"
+                }
+              ],
+              "false": []
             },
-            "id": "14d6f350-01c0-4ff7-9f74-b75b25c27d9d"
+            "id": "f936d9e5-e8f1-4039-b498-e6c03a06e02e"
           }
         ],
         "false": []
@@ -248,7 +358,7 @@
           },
           "valueB": {
             "type": "number",
-            "value": 7
+            "value": 5
           }
         },
         "__collapseElse": true,
@@ -258,19 +368,45 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_ACTOR_SET_SPRITE",
+            "command": "EVENT_IF",
             "args": {
-              "actorId": "0",
-              "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e"
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__label": "if task is to watch tv"
             },
-            "id": "c2f6b6ca-4e2f-4efe-b29a-f391fa4bf092"
-          },
-          {
-            "command": "EVENT_CALL_CUSTOM_EVENT",
-            "args": {
-              "customEventId": "342b4df4-c815-426b-acd9-115c82fc18a5"
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "0",
+                    "spriteSheetId": "d621f883-5d2d-4754-8931-4f77139c570e",
+                    "__collapse": false
+                  },
+                  "id": "c2f6b6ca-4e2f-4efe-b29a-f391fa4bf092"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "342b4df4-c815-426b-acd9-115c82fc18a5",
+                    "__collapse": true
+                  },
+                  "id": "1d60c433-6e32-41f6-9b55-6069d3e53342"
+                }
+              ],
+              "false": []
             },
-            "id": "1d60c433-6e32-41f6-9b55-6069d3e53342"
+            "id": "0159a830-58ad-4950-884e-afa7a5d89184"
           }
         ],
         "false": []

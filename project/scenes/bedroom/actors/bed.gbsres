@@ -20,10 +20,19 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "variable",
-          "value": "2"
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
         },
-        "__collapseElse": false
+        "__collapseElse": false,
+        "__collapse": false,
+        "__label": "if task is to watch tv"
       },
       "children": {
         "true": [
@@ -51,6 +60,28 @@
               "closeDelayFrames": 30
             },
             "id": "a9a21d18-0e5b-4f92-b63c-354c5494b7cc"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [],
+              "false": []
+            },
+            "id": "3114d602-ccd6-4d20-9271-05adcf093437"
           }
         ],
         "false": [
@@ -58,10 +89,18 @@
             "command": "EVENT_IF",
             "args": {
               "condition": {
-                "type": "variable",
-                "value": "8"
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
               },
-              "__collapseElse": true
+              "__collapseElse": true,
+              "__label": "if task is to go to bed"
             },
             "children": {
               "true": [
@@ -95,7 +134,8 @@
                   "args": {
                     "variable": "L0",
                     "trueText": "Yes",
-                    "falseText": "No"
+                    "falseText": "No",
+                    "__collapse": true
                   },
                   "id": "6611cd39-eb0d-406f-ac51-5d2b46e484bc"
                 },
@@ -106,7 +146,8 @@
                       "type": "variable",
                       "value": "L0"
                     },
-                    "__collapseElse": false
+                    "__collapseElse": false,
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -170,7 +211,7 @@
               ],
               "false": []
             },
-            "id": "ea70aa4c-99c1-4829-bbc4-83024c258ac3"
+            "id": "c269ca22-fe9c-496c-9098-1727ae336c82"
           }
         ]
       },

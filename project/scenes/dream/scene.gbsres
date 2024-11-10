@@ -38,7 +38,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -69,7 +69,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -100,7 +100,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -131,7 +131,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -161,7 +161,8 @@
             "value": 4
           }
         },
-        "__collapseElse": true
+        "__collapseElse": true,
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -176,6 +177,36 @@
         "false": []
       },
       "id": "9a831a9f-74ea-44ee-8b07-f868c605a2fe"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 5
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "63975bbd-0945-4636-9837-866d7beeec81"
+            },
+            "id": "01226cad-0163-43d6-917e-f003eeac1fbf"
+          }
+        ],
+        "false": []
+      },
+      "id": "6cf788b7-fc1a-43fe-b60d-bbcf8308e45c"
     }
   ],
   "playerHit1Script": [],

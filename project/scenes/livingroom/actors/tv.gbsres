@@ -17,109 +17,57 @@
   "symbol": "actor_6",
   "script": [
     {
-      "command": "EVENT_IF",
+      "command": "EVENT_SWITCH",
       "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "6"
-          },
-          "valueB": {
-            "type": "true"
-          }
-        },
+        "variable": "14",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
         "__collapseElse": false,
         "__collapse": false,
-        "__label": "If tv is on 1st time"
+        "__label": "Switch case for tv on off"
       },
       "children": {
-        "true": [
+        "true0": [
           {
-            "command": "EVENT_IF",
+            "command": "EVENT_COMMENT",
             "args": {
-              "condition": {
-                "type": "eq",
-                "valueA": {
-                  "type": "variable",
-                  "value": "11"
-                },
-                "valueB": {
-                  "type": "number",
-                  "value": 0
-                }
-              },
-              "__collapseElse": true,
-              "__collapse": true
+              "text": "",
+              "__collapse": true,
+              "__label": "What to do when tv is off"
             },
-            "children": {
-              "true": [
-                {
-                  "command": "EVENT_TEXT",
-                  "args": {
-                    "text": [
-                      "The tv is\nalready on.",
-                      "Turn off the tv?"
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30,
-                    "__collapse": true
-                  },
-                  "id": "7505072b-720e-4397-ba04-4e695bb6e361"
-                },
-                {
-                  "command": "EVENT_CHOICE",
-                  "args": {
-                    "variable": "11",
-                    "trueText": "Yes",
-                    "falseText": "No",
-                    "__collapse": false
-                  },
-                  "id": "06af3486-471d-4a71-8a07-21b544881d71"
-                }
-              ],
-              "false": []
-            },
-            "id": "22067630-8aa3-4309-ab72-d1d2edaed9b6"
-          }
-        ],
-        "false": []
-      },
-      "id": "a9a521d3-ecb9-4ece-b8b4-137aa8f2658d"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "6"
+            "id": "a15fb953-40c4-40a3-901e-a2bde96ba61e"
           },
-          "valueB": {
-            "type": "true"
-          }
-        },
-        "__collapseElse": true,
-        "__label": "If tv is on 2nd time",
-        "__collapse": true
-      },
-      "children": {
-        "true": [
           {
             "command": "EVENT_IF",
             "args": {
@@ -127,7 +75,7 @@
                 "type": "eq",
                 "valueA": {
                   "type": "variable",
-                  "value": "11"
+                  "value": "1"
                 },
                 "valueB": {
                   "type": "number",
@@ -135,230 +83,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true
-            },
-            "children": {
-              "true": [
-                {
-                  "command": "EVENT_TEXT",
-                  "args": {
-                    "text": [
-                      "You tried turning\noff the tv...",
-                      "...",
-                      "The tv is still\non.",
-                      "Try turning off\nthe tv again?"
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30
-                  },
-                  "id": "7fc3f46d-ad5d-4b89-af33-edc8c86d4898"
-                },
-                {
-                  "command": "EVENT_CHOICE",
-                  "args": {
-                    "variable": "11",
-                    "trueText": "Yes",
-                    "falseText": "No"
-                  },
-                  "id": "1083b73d-1960-459d-83ce-0ecef5741b08"
-                },
-                {
-                  "command": "EVENT_IF",
-                  "args": {
-                    "condition": {
-                      "type": "variable",
-                      "value": "11"
-                    },
-                    "__collapseElse": true,
-                    "__collapse": false
-                  },
-                  "children": {
-                    "true": [
-                      {
-                        "command": "EVENT_INC_VALUE",
-                        "args": {
-                          "variable": "11"
-                        },
-                        "id": "e4eed7eb-9b64-4c8e-b862-17af1a9be88a"
-                      }
-                    ],
-                    "false": []
-                  },
-                  "id": "569cc137-0db9-4f2c-ae6a-b951d73d38b7"
-                }
-              ],
-              "false": []
-            },
-            "id": "95337eca-e858-47ee-ae8c-bc6a3e8d3f08"
-          }
-        ],
-        "false": []
-      },
-      "id": "a656f924-70ff-414b-aeb1-8a7627e253fb"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "6"
-          },
-          "valueB": {
-            "type": "true"
-          }
-        },
-        "__collapseElse": true,
-        "__label": "If tv is on 3rd time",
-        "__collapse": true
-      },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_IF",
-            "args": {
-              "condition": {
-                "type": "eq",
-                "valueA": {
-                  "type": "variable",
-                  "value": "11"
-                },
-                "valueB": {
-                  "type": "number",
-                  "value": 2
-                }
-              },
-              "__collapseElse": true
-            },
-            "children": {
-              "true": [
-                {
-                  "command": "EVENT_TEXT",
-                  "args": {
-                    "text": [
-                      "You tried turning\nthe tv off yet\nagain...",
-                      "But it's still on.",
-                      "Try turning off\nthe tv again?"
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30
-                  },
-                  "id": "c6d4009b-9fcd-4af5-aebd-6ffa3e50655f"
-                },
-                {
-                  "command": "EVENT_CHOICE",
-                  "args": {
-                    "variable": "12",
-                    "trueText": "HELP",
-                    "falseText": "ME"
-                  },
-                  "id": "e9c4f3ab-d977-4b4f-a174-94aa61f6d9da"
-                },
-                {
-                  "command": "EVENT_TEXT",
-                  "args": {
-                    "text": [
-                      "You suddenly hear\nsomething on the \ntv."
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30
-                  },
-                  "id": "ee30bca5-4655-4ff6-bc34-d05fe92ae0b1"
-                },
-                {
-                  "command": "EVENT_CALL_CUSTOM_EVENT",
-                  "args": {
-                    "customEventId": "3bb78c2b-2177-452d-bf9e-ce7283948c3b"
-                  },
-                  "id": "701b1a6f-66e4-412f-91a2-d340d4f83e23"
-                },
-                {
-                  "command": "EVENT_STOP",
-                  "args": {
-                    "__collapse": false
-                  },
-                  "id": "370d42c4-9dcb-428a-89bc-49a62867ceec"
-                }
-              ],
-              "false": []
-            },
-            "id": "e73bd64e-3c65-4750-9b4a-6be292f5e2e6"
-          }
-        ],
-        "false": []
-      },
-      "id": "4b57fc27-d28e-45ce-be7a-d32b27822dc6"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "5"
-          },
-          "valueB": {
-            "type": "true"
-          }
-        },
-        "__collapseElse": true,
-        "__label": "If Tv is off",
-        "__collapse": true
-      },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_IF",
-            "args": {
-              "condition": {
-                "type": "variable",
-                "value": "2"
-              },
-              "__collapseElse": true,
+              "__label": "if task is to go watch tv",
               "__collapse": true
             },
             "children": {
@@ -386,14 +111,14 @@
                     "closeButton": "a",
                     "closeDelayTime": 0.5,
                     "closeDelayFrames": 30,
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "id": "5a97537e-b61c-439d-9899-c439a2fcb550"
                 },
                 {
                   "command": "EVENT_CHOICE",
                   "args": {
-                    "variable": "L0",
+                    "variable": "14",
                     "trueText": "Yes",
                     "falseText": "No",
                     "__collapse": false
@@ -407,7 +132,7 @@
                       "type": "eq",
                       "valueA": {
                         "type": "variable",
-                        "value": "L0"
+                        "value": "14"
                       },
                       "valueB": {
                         "type": "true"
@@ -440,16 +165,25 @@
                           "closeWhen": "key",
                           "closeButton": "a",
                           "closeDelayTime": 0.5,
-                          "closeDelayFrames": 30
+                          "closeDelayFrames": 30,
+                          "__collapse": true
                         },
                         "id": "347fe7eb-d325-4efc-a447-f5c557b8ee60"
                       },
                       {
                         "command": "EVENT_CALL_CUSTOM_EVENT",
                         "args": {
-                          "customEventId": "eb2a9b14-337f-4f67-b4e2-ac8606248c2e"
+                          "customEventId": "3fb61aaa-5abd-4ae7-b329-079fa40da6c9",
+                          "__collapse": false
                         },
-                        "id": "7312826d-1a10-45a7-b65a-6089b2e8c109"
+                        "id": "62d722f7-cb15-41a1-8295-8ea90a110b86"
+                      },
+                      {
+                        "command": "EVENT_STOP",
+                        "args": {
+                          "__collapse": true
+                        },
+                        "id": "33634167-0f39-40ef-b8f2-4da9819313de"
                       }
                     ],
                     "false": [
@@ -483,15 +217,173 @@
                   "id": "fe11db83-b3a1-45b6-9896-f900c894e620"
                 }
               ],
-              "false": [
+              "false": []
+            },
+            "id": "8da972e8-59ff-48e9-8a0c-a75935f7f98f"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "1"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true,
+              "__label": "if task is to go to bed",
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "I'm tired, I want\nto go to sleep."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "36dcbebb-861d-4a77-9b5f-18429b90992d"
+                }
+              ],
+              "false": []
+            },
+            "id": "961dc397-5771-4dcc-b807-5caf985c733b"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "",
+              "__collapse": true,
+              "__label": "what to do when tv is on"
+            },
+            "id": "c7835cde-be1c-4cfb-b4d0-62139fe340f6"
+          },
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "11",
+              "choices": 3,
+              "__collapseCase0": false,
+              "value0": 0,
+              "__collapseCase1": false,
+              "value1": 1,
+              "__collapseCase2": false,
+              "value2": 2,
+              "__collapseCase3": false,
+              "value3": 4,
+              "__collapseCase4": false,
+              "value4": 5,
+              "__collapseCase5": false,
+              "value5": 6,
+              "__collapseCase6": false,
+              "value6": 7,
+              "__collapseCase7": false,
+              "value7": 8,
+              "__collapseCase8": false,
+              "value8": 9,
+              "__collapseCase9": false,
+              "value9": 10,
+              "__collapseCase10": false,
+              "value10": 11,
+              "__collapseCase11": false,
+              "value11": 12,
+              "__collapseCase12": false,
+              "value12": 13,
+              "__collapseCase13": false,
+              "value13": 14,
+              "__collapseCase14": false,
+              "value14": 15,
+              "__collapseCase15": false,
+              "value15": 16,
+              "__collapseElse": true
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "",
+                    "__collapse": true,
+                    "__label": "Tv has not been turned off yet"
+                  },
+                  "id": "1caffd98-eff7-4724-b80e-96987e21240f"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "The tv is\nalready on.",
+                      "Turn off the tv?"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": false
+                  },
+                  "id": "7505072b-720e-4397-ba04-4e695bb6e361"
+                },
+                {
+                  "command": "EVENT_CHOICE",
+                  "args": {
+                    "variable": "L2",
+                    "trueText": "Yes",
+                    "falseText": "No",
+                    "__collapse": false
+                  },
+                  "id": "06af3486-471d-4a71-8a07-21b544881d71"
+                },
                 {
                   "command": "EVENT_IF",
                   "args": {
                     "condition": {
-                      "type": "variable",
-                      "value": "8"
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "L2"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
                     },
-                    "__collapseElse": true
+                    "__collapseElse": true,
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -499,7 +391,8 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "I'm too tired...\nI want to sleep."
+                            "You tried turning\noff the tv...",
+                            "But nothing\nhappened."
                           ],
                           "__section": "text",
                           "avatarId": "",
@@ -518,69 +411,325 @@
                           "closeDelayTime": 0.5,
                           "closeDelayFrames": 30
                         },
-                        "id": "8a3de480-d092-4969-89fb-3e992269362b"
+                        "id": "0cd3f917-6f84-4fd9-b0bb-b4a0ba4f2ec8"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "11"
+                        },
+                        "id": "8add85bd-3a86-4a9b-b28d-13078629f62f"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "You did not turn\noff the tv."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "1ede9777-79b8-4715-9d00-d2d578181023"
+                      }
+                    ]
+                  },
+                  "id": "b6a4b96c-365d-43d7-bd2d-4c83eb402d40"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "",
+                    "__label": "Tv has been turned off once",
+                    "__collapse": true
+                  },
+                  "id": "353e3f7a-37ab-4701-a15c-913a49a9b859"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "...",
+                      "The tv is still\non.",
+                      "Try turning off\nthe tv again?"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": false
+                  },
+                  "id": "7fc3f46d-ad5d-4b89-af33-edc8c86d4898"
+                },
+                {
+                  "command": "EVENT_CHOICE",
+                  "args": {
+                    "variable": "L2",
+                    "trueText": "Yes",
+                    "falseText": "No",
+                    "__collapse": false
+                  },
+                  "id": "1083b73d-1960-459d-83ce-0ecef5741b08"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "L2"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "You tried turning\noff the tv\nagain...",
+                            "But nothing\nhappened."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": false
+                        },
+                        "id": "7c733397-40c1-4bae-a250-1195da56a877"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "11",
+                          "__collapse": true
+                        },
+                        "id": "0d183cc9-3258-4be5-a320-f232809c77f3"
                       }
                     ],
                     "false": []
                   },
-                  "id": "19df130e-5b0e-442f-ab0b-772102bbf3e3"
+                  "id": "95337eca-e858-47ee-ae8c-bc6a3e8d3f08"
                 }
-              ]
-            },
-            "id": "f7790935-fa33-4730-9f3d-ace35b2f29ed"
-          }
-        ],
-        "false": []
-      },
-      "id": "f459f804-2fab-41eb-8678-04c185aa6ea2"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "1"
-          },
-          "valueB": {
-            "type": "variable",
-            "value": "13"
-          }
-        },
-        "__collapseElse": true
-      },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "It works"
               ],
-              "__section": "text",
-              "avatarId": "",
-              "minHeight": 4,
-              "maxHeight": 7,
-              "textX": 1,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "bottom",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "key",
-              "closeButton": "a",
-              "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "true2": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "1"
+                      },
+                      "valueB": {
+                        "type": "variable",
+                        "value": "13"
+                      }
+                    },
+                    "__collapseElse": false,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "\"Now...\"",
+                            "\"Where can we find\na mirror?\""
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "87485519-7ed9-4e83-b382-d2449e6adc9b"
+                      },
+                      {
+                        "command": "EVENT_STOP",
+                        "args": {},
+                        "id": "1db31736-7fe1-4a0e-ae6a-8cc38a9275f4"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "...",
+                            "The tv is still\non.",
+                            "Try turning off\nthe tv yet again?"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "c6d4009b-9fcd-4af5-aebd-6ffa3e50655f"
+                      },
+                      {
+                        "command": "EVENT_CHOICE",
+                        "args": {
+                          "variable": "12",
+                          "trueText": "HELP",
+                          "falseText": "ME",
+                          "__collapse": true
+                        },
+                        "id": "e9c4f3ab-d977-4b4f-a174-94aa61f6d9da"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "You suddenly hear\nsomething on the \ntv."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
+                        },
+                        "id": "ee30bca5-4655-4ff6-bc34-d05fe92ae0b1"
+                      },
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "3bb78c2b-2177-452d-bf9e-ce7283948c3b",
+                          "__collapse": true
+                        },
+                        "id": "701b1a6f-66e4-412f-91a2-d340d4f83e23"
+                      },
+                      {
+                        "command": "EVENT_STOP",
+                        "args": {},
+                        "id": "d32bab5a-eb94-40ef-97e6-8601bf9045c4"
+                      }
+                    ]
+                  },
+                  "id": "0a60f037-211c-4064-8784-797c5adf3ed3"
+                }
+              ],
+              "true3": [],
+              "true4": [],
+              "true5": [],
+              "true6": [],
+              "true7": [],
+              "true8": [],
+              "true9": [],
+              "true10": [],
+              "true11": [],
+              "true12": [],
+              "true13": [],
+              "true14": [],
+              "true15": [],
+              "false": []
             },
-            "id": "3897ae1a-4112-4b8a-a26e-3d2777ad3d9f"
+            "id": "6cd74b56-518d-407c-99c4-eeba604f7757"
           }
         ],
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
         "false": []
       },
-      "id": "b222affe-08f0-447e-a817-4ab2656c4b43"
+      "id": "25b18996-62dd-45e9-803e-92f499cc8ebb"
     }
   ],
   "startScript": [
@@ -595,12 +744,12 @@
           },
           "valueB": {
             "type": "number",
-            "value": 5
+            "value": 6
           }
         },
         "__collapseElse": false,
-        "__label": "If 6th day",
-        "__collapse": true
+        "__label": "If 7th day",
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -608,55 +757,28 @@
             "command": "EVENT_ACTOR_SET_SPRITE",
             "args": {
               "actorId": "$self$",
-              "spriteSheetId": "1f1d15fa-5105-439d-ac79-757ccd71a297"
+              "spriteSheetId": "1f1d15fa-5105-439d-ac79-757ccd71a297",
+              "__collapse": true
             },
             "id": "b9ec4dd0-2556-4861-97e2-3121b6ec61e3"
           },
           {
-            "command": "EVENT_SET_VALUE",
+            "command": "EVENT_CALL_CUSTOM_EVENT",
             "args": {
-              "variable": "6",
-              "value": {
-                "type": "true"
-              },
+              "customEventId": "c63120a0-d2c3-4066-b12d-534deea76a9e",
+              "$actor[0]$": "$self$",
               "__collapse": true
             },
-            "id": "d3b442ed-9f8f-49d7-a346-af209496c377"
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "5",
-              "value": {
-                "type": "false"
-              },
-              "__collapse": true
-            },
-            "id": "8f5a2665-8b36-41e5-bd7d-2b822e7c5c8d"
+            "id": "0a7dae68-8a54-4544-ad93-e2f5070e1529"
           }
         ],
         "false": [
           {
-            "command": "EVENT_SET_VALUE",
+            "command": "EVENT_CALL_CUSTOM_EVENT",
             "args": {
-              "variable": "6",
-              "value": {
-                "type": "false"
-              },
-              "__collapse": true
+              "customEventId": "ce131432-e306-456a-9957-258662cb82f8"
             },
-            "id": "282c795d-af9e-41be-840e-82e2afe3f2b3"
-          },
-          {
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "5",
-              "value": {
-                "type": "true"
-              },
-              "__collapse": true
-            },
-            "id": "18362023-294d-4ee2-9853-2856532c4992"
+            "id": "97c77feb-3b72-4d0f-890d-9a5b093b56b8"
           }
         ]
       },

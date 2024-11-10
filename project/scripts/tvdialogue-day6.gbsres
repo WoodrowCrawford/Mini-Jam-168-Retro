@@ -4,7 +4,12 @@
   "name": "TVDialogue-Day6",
   "description": "",
   "variables": {},
-  "actors": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
   "symbol": "script_31",
   "script": [
     {
@@ -64,6 +69,21 @@
         "closeDelayFrames": 30
       },
       "id": "3c19db8d-2882-47c5-b8e7-27098bd5c56f"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "ce131432-e306-456a-9957-258662cb82f8",
+        "$actor[0]$": "0"
+      },
+      "id": "0523cc77-d403-4a83-91b9-03815642c1e0"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "301d625c-27ed-4b61-993a-755a8e1ae8e5"
+      },
+      "id": "ad3d8fa6-b4f9-40c2-a7d8-1b56f8efc20b"
     }
   ]
 }

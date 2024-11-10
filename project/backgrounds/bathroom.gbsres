@@ -8,5 +8,6 @@
   "imageWidth": 240,
   "imageHeight": 160,
   "filename": "Bathroom.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

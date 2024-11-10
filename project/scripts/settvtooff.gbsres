@@ -1,0 +1,35 @@
+{
+  "_resourceType": "script",
+  "id": "ce131432-e306-456a-9957-258662cb82f8",
+  "name": "SetTVToOff",
+  "description": "Turns off the tv.\nsets the value to 0",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_2",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "14",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "6c95ab21-9b1b-45eb-8d95-9a880dea28a8"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_SPRITE",
+      "args": {
+        "actorId": "0",
+        "spriteSheetId": "6149b21e-0ea9-4a1f-8186-6edcaa434861"
+      },
+      "id": "7d17a2db-8b76-4080-b4e1-2c8874ca95f7"
+    }
+  ]
+}

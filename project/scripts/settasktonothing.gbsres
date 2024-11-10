@@ -1,0 +1,22 @@
+{
+  "_resourceType": "script",
+  "id": "0c042361-1eba-4f2c-b106-fb6dac40f8ff",
+  "name": "SetTaskToNothing",
+  "description": "Sets the task to nothing",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_36",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "22cce886-194b-48ab-9b8c-46a845ed2e2a"
+    }
+  ]
+}

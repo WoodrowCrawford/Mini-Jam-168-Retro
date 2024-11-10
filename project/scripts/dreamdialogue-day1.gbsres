@@ -54,7 +54,8 @@
         "closeWhen": "key",
         "closeButton": "a",
         "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "closeDelayFrames": 30,
+        "__collapse": false
       },
       "id": "537a0dbd-dd4f-4ef7-b57d-8445009cbfdd"
     },
@@ -62,7 +63,7 @@
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "55a904f8-0451-45ee-8c11-6a1465781d73",
-        "__collapse": true
+        "__collapse": false
       },
       "id": "f4c9aff7-c8f4-4c0b-aaa7-9b674559754d"
     }
