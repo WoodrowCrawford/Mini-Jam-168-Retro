@@ -15,7 +15,375 @@
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_9",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "1",
+        "choices": 4,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": true
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "",
+              "__label": "If there is no task",
+              "__collapse": true
+            },
+            "id": "042f2ce3-9134-431f-9daf-6b82d729d0ac"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It's just a\nmirror."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "e14c03ca-ef50-4391-8d69-161c5cd69ed9"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "",
+              "__label": "if the task is to watch tv",
+              "__collapse": true
+            },
+            "id": "1b9556d0-54df-439e-90aa-62bed436cf2c"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "5"
+              },
+              "__collapseElse": false,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "The chant is\nalready complete."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "6b35ca01-0095-49ec-a651-f3169e8d772b"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "It's a basic\nmirror."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true
+                  },
+                  "id": "0d221df5-6a87-4f93-ad47-9a95ee7f7e1c"
+                }
+              ]
+            },
+            "id": "c9074275-2eec-408c-8c6a-75773cb96d5f"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "",
+              "__label": "if the task is to go to bed",
+              "__collapse": true
+            },
+            "id": "52c6d18b-9aed-4fee-80f5-1204e342412d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You look at your\nreflection.",
+                "...",
+                "You look tired."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "26ff88aa-7c45-4200-ac1f-4b26f18b2c33"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "",
+              "__label": "if the task is to chant in the mirror",
+              "__collapse": true
+            },
+            "id": "ba8f4fc9-6db9-4ee3-af75-e2d1f23d1e26"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It's a mirror!",
+                "Would you like to\nchant in front\nof the mirror?"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "c5833195-8362-4f7d-b566-e82e1f34d444"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "Yes",
+              "falseText": "No",
+              "__collapse": true
+            },
+            "id": "a5267539-1828-4801-ae47-c9d8af3ef529"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              },
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You decided to\nchant in front\nof the mirror. ",
+                      "You recall what\nhad to be said...",
+                      "Then chanted:",
+                      "\"Let him go.\"",
+                      "\"Let him go.\"",
+                      "\"Let him go.\"",
+                      "\"Let him go.\"",
+                      "\"Let him go.\"",
+                      "...",
+                      "And then silence.",
+                      "You aren't sure if\nit worked.",
+                      "But you should\nprobably report\nback to the boy."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30,
+                    "__collapse": true
+                  },
+                  "id": "9f3e6f66-80c2-49f2-9784-5bd57a851864"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "5",
+                    "value": {
+                      "type": "true"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "cf37e861-4e85-4708-a08d-9979451cc9ba"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "1",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "__label": "set task to watch tv",
+                    "__collapse": true
+                  },
+                  "id": "f0a4ac9b-ab4a-4109-a6f3-83153ba76e7a"
+                },
+                {
+                  "command": "EVENT_STOP",
+                  "args": {},
+                  "id": "8eaa9d8d-061e-4baf-a9b9-ce4f30a344d1"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You decided to\nnot chant in front\nof the mirror."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "2067df5f-51bb-4b50-b5c1-5e95eb3b8a94"
+                }
+              ]
+            },
+            "id": "eb563e75-0a5e-44da-a2f9-c7ba412b7fba"
+          }
+        ],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
+      },
+      "id": "6afa93e7-2a4f-41bb-89e7-8bc6866903dd"
+    }
+  ],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],

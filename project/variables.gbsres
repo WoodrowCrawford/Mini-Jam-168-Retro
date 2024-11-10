@@ -62,9 +62,14 @@
       "symbol": "var_chanttomirror"
     },
     {
+      "id": "14",
+      "name": "TVStatus",
+      "symbol": "var_tvstatus"
+    },
+    {
       "id": "7a5ac0c4-d93e-4b82-b930-aaedac2b1139__L0",
       "name": "TurnOnTV?",
-      "symbol": "var_turnontv__0"
+      "symbol": "var_turnontv_0"
     },
     {
       "id": "7a5ac0c4-d93e-4b82-b930-aaedac2b1139__L1",
@@ -77,14 +82,14 @@
       "symbol": "var_gotosleep_0"
     },
     {
-      "id": "14",
-      "name": "TVStatus",
-      "symbol": "var_tvstatus"
-    },
-    {
       "id": "7a5ac0c4-d93e-4b82-b930-aaedac2b1139__L2",
       "name": "turnOffGhostTv",
       "symbol": "var_turnoffghosttv_0"
+    },
+    {
+      "id": "5",
+      "name": "ChantCompleted",
+      "symbol": "var_chantcompleted"
     }
   ]
 }

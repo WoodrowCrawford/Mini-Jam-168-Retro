@@ -15,7 +15,34 @@
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_10",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "It's a toilet.",
+          "You don't have to\nuse the restroom\nright now."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "1cea5276-e23f-4226-9a16-dc729174d1bf"
+    }
+  ],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],

@@ -53,7 +53,7 @@
         "value14": 15,
         "__collapseCase15": false,
         "value15": 16,
-        "__collapseElse": false,
+        "__collapseElse": true,
         "__collapse": false,
         "__label": "Switch case for tv on off"
       },
@@ -84,7 +84,7 @@
               },
               "__collapseElse": true,
               "__label": "if task is to go watch tv",
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -319,7 +319,7 @@
               "value14": 15,
               "__collapseCase15": false,
               "value15": 16,
-              "__collapseElse": true
+              "__collapseElse": false
             },
             "children": {
               "true0": [
@@ -561,138 +561,406 @@
               ],
               "true2": [
                 {
-                  "command": "EVENT_IF",
+                  "command": "EVENT_SWITCH",
                   "args": {
-                    "condition": {
-                      "type": "eq",
-                      "valueA": {
-                        "type": "variable",
-                        "value": "1"
-                      },
-                      "valueB": {
-                        "type": "variable",
-                        "value": "13"
-                      }
-                    },
+                    "variable": "1",
+                    "choices": 3,
+                    "__collapseCase0": false,
+                    "value0": 1,
+                    "__collapseCase1": false,
+                    "value1": 3,
+                    "__collapseCase2": false,
+                    "value2": 2,
+                    "__collapseCase3": false,
+                    "value3": 4,
+                    "__collapseCase4": false,
+                    "value4": 5,
+                    "__collapseCase5": false,
+                    "value5": 6,
+                    "__collapseCase6": false,
+                    "value6": 7,
+                    "__collapseCase7": false,
+                    "value7": 8,
+                    "__collapseCase8": false,
+                    "value8": 9,
+                    "__collapseCase9": false,
+                    "value9": 10,
+                    "__collapseCase10": false,
+                    "value10": 11,
+                    "__collapseCase11": false,
+                    "value11": 12,
+                    "__collapseCase12": false,
+                    "value12": 13,
+                    "__collapseCase13": false,
+                    "value13": 14,
+                    "__collapseCase14": false,
+                    "value14": 15,
+                    "__collapseCase15": false,
+                    "value15": 16,
                     "__collapseElse": false,
-                    "__collapse": false
+                    "__collapse": false,
+                    "__label": "switch for tasks"
                   },
                   "children": {
-                    "true": [
+                    "true0": [
                       {
-                        "command": "EVENT_TEXT",
+                        "command": "EVENT_COMMENT",
                         "args": {
-                          "text": [
-                            "\"Now...\"",
-                            "\"Where can we find\na mirror?\""
-                          ],
-                          "__section": "text",
-                          "avatarId": "",
-                          "minHeight": 4,
-                          "maxHeight": 7,
-                          "textX": 1,
-                          "textY": 1,
-                          "textHeight": 5,
-                          "position": "bottom",
-                          "clearPrevious": true,
-                          "showFrame": "true",
-                          "speedIn": -1,
-                          "speedOut": -1,
-                          "closeWhen": "key",
-                          "closeButton": "a",
-                          "closeDelayTime": 0.5,
-                          "closeDelayFrames": 30,
+                          "text": "",
+                          "__label": "if task is watch tv",
                           "__collapse": true
                         },
-                        "id": "87485519-7ed9-4e83-b382-d2449e6adc9b"
+                        "id": "0f67bda0-eea9-45b9-9579-8ec20b8e98c6"
                       },
                       {
-                        "command": "EVENT_STOP",
-                        "args": {},
-                        "id": "1db31736-7fe1-4a0e-ae6a-8cc38a9275f4"
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "5"
+                            },
+                            "valueB": {
+                              "type": "true"
+                            }
+                          },
+                          "__collapseElse": false,
+                          "__label": "check if the chant has been completed",
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "It's a tv!",
+                                  "The boy is on the\nscreen still.",
+                                  "Talk to the boy?"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30,
+                                "__collapse": false
+                              },
+                              "id": "bc3a6076-1fec-4775-ac5f-c99dba5d66f1"
+                            },
+                            {
+                              "command": "EVENT_CHOICE",
+                              "args": {
+                                "variable": "T0",
+                                "trueText": "Yes",
+                                "falseText": "No"
+                              },
+                              "id": "726dd6fa-a42a-47ab-b930-f36e89fa35ba"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "variable",
+                                  "value": "T0"
+                                },
+                                "__collapseElse": false,
+                                "__collapse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "You told the boy\nabout the chant...",
+                                        "...",
+                                        "\"You did the\nchant?\"",
+                                        "\"Great work!\"",
+                                        "\"It may seem like\nnothing happened,\"",
+                                        "\"But give it\ntime.\"",
+                                        "\"While you are\nwaiting...\"",
+                                        "\"Why not go to\nbed?\"",
+                                        "\"You must be tired\nafter all that\nrunning around.\""
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "eccaa3a9-0fb1-4759-8916-7602af047538"
+                                  },
+                                  {
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                                    "args": {
+                                      "customEventId": "3f45fcdf-cf2f-4ced-9e45-7f15054f6e56",
+                                      "__collapse": true
+                                    },
+                                    "id": "2d8affd7-7a9b-4393-897a-52ade43144f7"
+                                  },
+                                  {
+                                    "command": "EVENT_STOP",
+                                    "args": {},
+                                    "id": "2372f14c-2a5f-4cff-82da-0c101347961b"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "You did not talk\nto the boy."
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "88ea783f-e05d-4f32-947b-a75c52859d7b"
+                                  }
+                                ]
+                              },
+                              "id": "03b6cd2e-ca31-4dee-a6e3-94a9ca9a404d"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "...",
+                                  "The tv is still\non.",
+                                  "Try turning off\nthe tv yet again?"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30,
+                                "__collapse": true
+                              },
+                              "id": "c6d4009b-9fcd-4af5-aebd-6ffa3e50655f"
+                            },
+                            {
+                              "command": "EVENT_CHOICE",
+                              "args": {
+                                "variable": "12",
+                                "trueText": "HELP",
+                                "falseText": "ME",
+                                "__collapse": true
+                              },
+                              "id": "e9c4f3ab-d977-4b4f-a174-94aa61f6d9da"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "You suddenly hear\nsomething on the \ntv."
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30,
+                                "__collapse": true
+                              },
+                              "id": "ee30bca5-4655-4ff6-bc34-d05fe92ae0b1"
+                            },
+                            {
+                              "command": "EVENT_CALL_CUSTOM_EVENT",
+                              "args": {
+                                "customEventId": "3bb78c2b-2177-452d-bf9e-ce7283948c3b",
+                                "__collapse": true
+                              },
+                              "id": "701b1a6f-66e4-412f-91a2-d340d4f83e23"
+                            },
+                            {
+                              "command": "EVENT_STOP",
+                              "args": {},
+                              "id": "c1712f47-714a-445c-998f-f8c404a4fc29"
+                            }
+                          ]
+                        },
+                        "id": "e2b76f03-a3fb-4880-abc2-866476e35546"
                       }
                     ],
-                    "false": [
+                    "true1": [
                       {
-                        "command": "EVENT_TEXT",
+                        "command": "EVENT_COMMENT",
                         "args": {
-                          "text": [
-                            "...",
-                            "The tv is still\non.",
-                            "Try turning off\nthe tv yet again?"
-                          ],
-                          "__section": "text",
-                          "avatarId": "",
-                          "minHeight": 4,
-                          "maxHeight": 7,
-                          "textX": 1,
-                          "textY": 1,
-                          "textHeight": 5,
-                          "position": "bottom",
-                          "clearPrevious": true,
-                          "showFrame": "true",
-                          "speedIn": -1,
-                          "speedOut": -1,
-                          "closeWhen": "key",
-                          "closeButton": "a",
-                          "closeDelayTime": 0.5,
-                          "closeDelayFrames": 30,
-                          "__collapse": true
+                          "text": "",
+                          "__collapse": true,
+                          "__label": "if task is to chant"
                         },
-                        "id": "c6d4009b-9fcd-4af5-aebd-6ffa3e50655f"
+                        "id": "877a0252-80d0-4a42-8ec3-8e673a955021"
                       },
                       {
-                        "command": "EVENT_CHOICE",
+                        "command": "EVENT_IF",
                         "args": {
-                          "variable": "12",
-                          "trueText": "HELP",
-                          "falseText": "ME",
-                          "__collapse": true
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "5"
+                            },
+                            "valueB": {
+                              "type": "true"
+                            }
+                          },
+                          "__collapseElse": false,
+                          "__label": "if the chant has been completed",
+                          "__collapse": false
                         },
-                        "id": "e9c4f3ab-d977-4b4f-a174-94aa61f6d9da"
-                      },
-                      {
-                        "command": "EVENT_TEXT",
-                        "args": {
-                          "text": [
-                            "You suddenly hear\nsomething on the \ntv."
-                          ],
-                          "__section": "text",
-                          "avatarId": "",
-                          "minHeight": 4,
-                          "maxHeight": 7,
-                          "textX": 1,
-                          "textY": 1,
-                          "textHeight": 5,
-                          "position": "bottom",
-                          "clearPrevious": true,
-                          "showFrame": "true",
-                          "speedIn": -1,
-                          "speedOut": -1,
-                          "closeWhen": "key",
-                          "closeButton": "a",
-                          "closeDelayTime": 0.5,
-                          "closeDelayFrames": 30,
-                          "__collapse": true
+                        "children": {
+                          "true": [],
+                          "false": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "\"Now...\"",
+                                  "\"Where can we find\na mirror?\""
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30,
+                                "__collapse": true
+                              },
+                              "id": "c5aca61b-3119-4885-b497-d89e42591479"
+                            },
+                            {
+                              "command": "EVENT_STOP",
+                              "args": {},
+                              "id": "225d5a47-6b03-40c5-8df6-c29dfba69f97"
+                            }
+                          ]
                         },
-                        "id": "ee30bca5-4655-4ff6-bc34-d05fe92ae0b1"
-                      },
-                      {
-                        "command": "EVENT_CALL_CUSTOM_EVENT",
-                        "args": {
-                          "customEventId": "3bb78c2b-2177-452d-bf9e-ce7283948c3b",
-                          "__collapse": true
-                        },
-                        "id": "701b1a6f-66e4-412f-91a2-d340d4f83e23"
-                      },
-                      {
-                        "command": "EVENT_STOP",
-                        "args": {},
-                        "id": "d32bab5a-eb94-40ef-97e6-8601bf9045c4"
+                        "id": "aab2c1ba-9da2-44d0-a5cf-caea977612dc"
                       }
-                    ]
+                    ],
+                    "true2": [
+                      {
+                        "command": "EVENT_COMMENT",
+                        "args": {
+                          "text": "",
+                          "__label": "if task is to go to bed",
+                          "__collapse": true
+                        },
+                        "id": "627c252f-c153-4d49-99fb-0b6db43cc1fb"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "\"You should go to\nbed.\""
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": false
+                        },
+                        "id": "fc6b4524-5aa1-4469-a276-779dfe925ba9"
+                      }
+                    ],
+                    "true3": [],
+                    "true4": [],
+                    "true5": [],
+                    "true6": [],
+                    "true7": [],
+                    "true8": [],
+                    "true9": [],
+                    "true10": [],
+                    "true11": [],
+                    "true12": [],
+                    "true13": [],
+                    "true14": [],
+                    "true15": [],
+                    "false": []
                   },
-                  "id": "0a60f037-211c-4064-8784-797c5adf3ed3"
+                  "id": "7738c597-a702-4dda-8176-1a483b64f906"
                 }
               ],
               "true3": [],

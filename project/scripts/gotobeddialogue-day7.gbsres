@@ -1,0 +1,54 @@
+{
+  "_resourceType": "script",
+  "id": "3f45fcdf-cf2f-4ced-9e45-7f15054f6e56",
+  "name": "GoToBedDialogue-Day7",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_0",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Now that you think\nabout it...",
+          "You are a little\nsleepy.",
+          "To be fair, you've\nhad a day.",
+          "You've talked to\nan actual ghost.",
+          "...",
+          "Yeah...",
+          "You should\nprobably call it\nfor the night."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "f1054ae3-fc18-4c69-aad6-ac583e7cc4f9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "1",
+        "value": {
+          "type": "number",
+          "value": 2
+        },
+        "__collapse": true
+      },
+      "id": "55e9bf5a-3c25-437c-bd6a-7880fb0cf0c7"
+    }
+  ]
+}

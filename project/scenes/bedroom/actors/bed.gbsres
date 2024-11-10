@@ -17,25 +17,56 @@
   "symbol": "actor_0",
   "script": [
     {
-      "command": "EVENT_IF",
+      "command": "EVENT_SWITCH",
       "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "1"
-          },
-          "valueB": {
-            "type": "number",
-            "value": 1
-          }
-        },
+        "variable": "1",
+        "choices": 3,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
         "__collapseElse": false,
-        "__collapse": false,
-        "__label": "if task is to watch tv"
+        "__collapse": false
       },
       "children": {
-        "true": [
+        "true0": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "",
+              "__collapse": true,
+              "__label": "task is watch tv"
+            },
+            "id": "7eb5e1dc-a543-422d-8ba9-299dd98c5435"
+          },
           {
             "command": "EVENT_TEXT",
             "args": {
@@ -57,165 +88,200 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__collapse": true
             },
             "id": "a9a21d18-0e5b-4f92-b63c-354c5494b7cc"
+          },
+          {
+            "command": "EVENT_STOP",
+            "args": {
+              "__collapse": true
+            },
+            "id": "c7186be8-2fac-48c4-8ee9-0c7fdedae34a"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "",
+              "__label": "task is go to bed",
+              "__collapse": true
+            },
+            "id": "eff6be3f-0e2e-4b1a-a6b3-5644284fa53c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Go to sleep?"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "ee1fc0c8-6941-48a7-93cb-1cff36b60aea"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "Yes",
+              "falseText": "No",
+              "__collapse": true
+            },
+            "id": "6611cd39-eb0d-406f-ac51-5d2b46e484bc"
           },
           {
             "command": "EVENT_IF",
             "args": {
               "condition": {
-                "type": "eq",
-                "valueA": {
-                  "type": "variable",
-                  "value": "L0"
-                },
-                "valueB": {
-                  "type": "number",
-                  "value": 1
-                }
-              },
-              "__collapseElse": true
-            },
-            "children": {
-              "true": [],
-              "false": []
-            },
-            "id": "3114d602-ccd6-4d20-9271-05adcf093437"
-          }
-        ],
-        "false": [
-          {
-            "command": "EVENT_IF",
-            "args": {
-              "condition": {
-                "type": "eq",
-                "valueA": {
-                  "type": "variable",
-                  "value": "1"
-                },
-                "valueB": {
-                  "type": "number",
-                  "value": 2
-                }
+                "type": "variable",
+                "value": "L0"
               },
               "__collapseElse": true,
-              "__label": "if task is to go to bed"
+              "__collapse": false
             },
             "children": {
               "true": [
                 {
-                  "command": "EVENT_TEXT",
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
                   "args": {
-                    "text": [
-                      "Go to sleep?"
-                    ],
-                    "__section": "text",
-                    "avatarId": "",
-                    "minHeight": 4,
-                    "maxHeight": 7,
-                    "textX": 1,
-                    "textY": 1,
-                    "textHeight": 5,
-                    "position": "bottom",
-                    "clearPrevious": true,
-                    "showFrame": "true",
-                    "speedIn": -1,
-                    "speedOut": -1,
-                    "closeWhen": "key",
-                    "closeButton": "a",
-                    "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30
+                    "customEventId": "726af7ee-b6fc-42a7-b0be-a47d763b0532"
                   },
-                  "id": "ee1fc0c8-6941-48a7-93cb-1cff36b60aea"
-                },
-                {
-                  "command": "EVENT_CHOICE",
-                  "args": {
-                    "variable": "L0",
-                    "trueText": "Yes",
-                    "falseText": "No",
-                    "__collapse": true
-                  },
-                  "id": "6611cd39-eb0d-406f-ac51-5d2b46e484bc"
-                },
+                  "id": "c6b11444-1415-4db1-bd62-9edb2e40f440"
+                }
+              ],
+              "false": [
                 {
                   "command": "EVENT_IF",
                   "args": {
                     "condition": {
-                      "type": "variable",
-                      "value": "L0"
+                      "type": "not",
+                      "value": {
+                        "type": "variable",
+                        "value": "L0"
+                      }
                     },
-                    "__collapseElse": false,
-                    "__collapse": true
+                    "__collapseElse": true
                   },
                   "children": {
                     "true": [
                       {
-                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "command": "EVENT_TEXT",
                         "args": {
-                          "customEventId": "726af7ee-b6fc-42a7-b0be-a47d763b0532"
+                          "text": [
+                            "You did not go \nto sleep."
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30,
+                          "__collapse": true
                         },
-                        "id": "c6b11444-1415-4db1-bd62-9edb2e40f440"
+                        "id": "6d1a1d3b-e3a0-49d3-a586-52dfed94ed12"
+                      },
+                      {
+                        "command": "EVENT_STOP",
+                        "args": {},
+                        "id": "a246afa3-7833-4839-80d5-5c10dc74ba71"
                       }
                     ],
-                    "false": [
-                      {
-                        "command": "EVENT_IF",
-                        "args": {
-                          "condition": {
-                            "type": "not",
-                            "value": {
-                              "type": "variable",
-                              "value": "L0"
-                            }
-                          },
-                          "__collapseElse": true
-                        },
-                        "children": {
-                          "true": [
-                            {
-                              "command": "EVENT_TEXT",
-                              "args": {
-                                "text": [
-                                  "You did not go \nto sleep."
-                                ],
-                                "__section": "text",
-                                "avatarId": "",
-                                "minHeight": 4,
-                                "maxHeight": 7,
-                                "textX": 1,
-                                "textY": 1,
-                                "textHeight": 5,
-                                "position": "bottom",
-                                "clearPrevious": true,
-                                "showFrame": "true",
-                                "speedIn": -1,
-                                "speedOut": -1,
-                                "closeWhen": "key",
-                                "closeButton": "a",
-                                "closeDelayTime": 0.5,
-                                "closeDelayFrames": 30
-                              },
-                              "id": "6d1a1d3b-e3a0-49d3-a586-52dfed94ed12"
-                            }
-                          ],
-                          "false": []
-                        },
-                        "id": "437a7296-bfd9-474d-84af-770eee138601"
-                      }
-                    ]
+                    "false": []
                   },
-                  "id": "cdf02c3d-8e3c-4b08-b82b-d7b247b318a1"
+                  "id": "437a7296-bfd9-474d-84af-770eee138601"
                 }
-              ],
-              "false": []
+              ]
             },
-            "id": "c269ca22-fe9c-496c-9098-1727ae336c82"
+            "id": "cdf02c3d-8e3c-4b08-b82b-d7b247b318a1"
           }
-        ]
+        ],
+        "true2": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "",
+              "__label": "task is go chant",
+              "__collapse": true
+            },
+            "id": "500952d5-7d89-432a-bb49-22ce85a35d26"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I can't sleep yet!",
+                "I have a chant to\ncomplete!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": true
+            },
+            "id": "823d9487-d307-4435-9591-4b2985151ae7"
+          },
+          {
+            "command": "EVENT_STOP",
+            "args": {},
+            "id": "7da62d20-634c-4eb8-9d43-82a023f1a1f1"
+          }
+        ],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": []
       },
-      "id": "e80fe755-9a3c-4077-8618-8c30693ddac9"
+      "id": "3370aa8f-b231-481a-8ad3-69637dca7444"
     }
   ],
   "startScript": [
