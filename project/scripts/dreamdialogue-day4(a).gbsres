@@ -1,28 +1,28 @@
 {
   "_resourceType": "script",
-  "id": "f560b08e-0f7b-44aa-ada1-ba43c74646eb",
-  "name": "DreamDialogue-Day5",
+  "id": "b75c6e30-0c80-4817-8267-3f35fa73a8b9",
+  "name": "DreamDialogue-Day4(A)",
   "description": "",
   "variables": {},
   "actors": {},
-  "symbol": "script_29",
+  "symbol": "script_25",
   "script": [
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "You have a\nnightmare.",
-          "It's pitch black.",
-          "You can't see\nanything.",
-          "You hear a\nfamiliar voice...",
-          "It's the boy.",
-          "He sounds\nterrified.",
-          "\"LET ME GO!\"",
-          "\"PLEASE SOMEONE,\nANYONE!\"",
-          "\"LET ME OUT OF\nHERE!\"",
-          "Then the dream\nends.",
+          "You have a strange\ndream...",
+          "You are a super\nhero again!",
+          "You hear someone\ncalling for help.",
+          "It sounds like a\nboy.",
+          "You look\neverywhere, but\nyou can't find\nhim.",
+          "\"...help me...\"",
+          "\"someone help me\nplease...\"",
+          "You looked in\ntrees, houses,\nbut nothing.\n",
+          "\"...save me...\"",
+          "The dream\nabruptly ends.",
           "...",
-          "You wake up\nfeeling scared."
+          "You wake up \nfeeling worried."
         ],
         "__section": "text",
         "avatarId": "",
@@ -41,14 +41,14 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "1d643833-ca00-40c1-a385-ebc70b8907d3"
+      "id": "b7b8edbf-5e32-4cce-8ac0-a78fa5f5dfb5"
     },
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "55a904f8-0451-45ee-8c11-6a1465781d73"
       },
-      "id": "7bd59cbe-8927-4ad7-8fc1-f23e4c129868"
+      "id": "e4b48859-3ae0-41bf-bd4b-715adb1cffd0"
     }
   ]
 }

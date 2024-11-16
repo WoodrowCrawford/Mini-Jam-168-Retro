@@ -1,0 +1,35 @@
+{
+  "_resourceType": "script",
+  "id": "5da0c73c-f578-4b5d-bf96-d757566db1d7",
+  "name": "WakeUp(InsideTV)",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_5",
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "3"
+      },
+      "id": "d5b7ba79-cb61-4a3e-b5d5-da891ab39da1"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f85c1ea6-8609-4ff1-9181-f8212fddc261",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "0c04e738-0ce6-4df5-9418-3296b56e9858"
+    }
+  ]
+}

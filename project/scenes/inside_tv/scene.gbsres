@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "f85c1ea6-8609-4ff1-9181-f8212fddc261",
+  "_index": 4,
+  "name": "Inside TV",
+  "backgroundId": "d09d8d4a-6c0e-4a94-bed8-5147e5c9fe8f",
+  "tilesetId": "",
+  "width": 30,
+  "height": 20,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_5",
+  "x": 912,
+  "y": 328,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}
