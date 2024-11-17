@@ -1,0 +1,45 @@
+{
+  "_resourceType": "script",
+  "id": "fc166214-c996-4377-98ee-0778f11e14f2",
+  "name": "TVDialogue-Day1(B)",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_41",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "...",
+          "It's pitch black.",
+          "You don't know\nwhere you are.",
+          "You try to move\naround,",
+          "But something is\nkeeping you from\nmoving.",
+          "It feels like...",
+          "Glass?",
+          "Just where are you\nexactly?",
+          "As you sit and\nponder this\nquestion...",
+          "You are suddenly\nmet with a flash\nof bright light."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "33cdb311-dd98-4a47-ab8b-5bb3e4f4edc2"
+    }
+  ]
+}
