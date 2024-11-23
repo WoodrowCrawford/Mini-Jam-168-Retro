@@ -15,17 +15,17 @@
         "__collapseCase0": false,
         "value0": 7,
         "__collapseCase1": false,
-        "value1": 2,
+        "value1": 8,
         "__collapseCase2": false,
-        "value2": 3,
+        "value2": 9,
         "__collapseCase3": false,
-        "value3": 4,
+        "value3": 10,
         "__collapseCase4": false,
-        "value4": 5,
+        "value4": 11,
         "__collapseCase5": false,
-        "value5": 6,
+        "value5": 12,
         "__collapseCase6": false,
-        "value6": 7,
+        "value6": 13,
         "__collapseCase7": false,
         "value7": 8,
         "__collapseCase8": false,
@@ -51,7 +51,8 @@
           {
             "command": "EVENT_COMMENT",
             "args": {
-              "text": "8th day"
+              "text": "",
+              "__label": "8th, 1st(?) day"
             },
             "id": "30a1f341-6a79-4599-8c0f-0bfafea764fc"
           },
@@ -76,17 +77,223 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__collapse": true
             },
             "id": "2851a947-16a1-4390-b766-f970e869f019"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "fc166214-c996-4377-98ee-0778f11e14f2"
+            },
+            "id": "c3db6226-1bda-466c-8221-ab504152e98b"
           }
         ],
-        "true1": [],
-        "true2": [],
-        "true3": [],
-        "true4": [],
-        "true5": [],
-        "true6": [],
+        "true1": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "9th day, 2nd(?) day"
+            },
+            "id": "1775aa80-abd6-4458-b40b-c3e938301603"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "2nd(?) day"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "8289c045-0e6b-477d-aac7-27bae914fc26"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "10th day, 3rd(?) day"
+            },
+            "id": "259c594d-45cd-48fd-9ebb-c26f40e4f57f"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "3rd(?) day"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "0df430c1-67c0-4f48-b470-8e27ce9943e0"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "11th day, 4th(?) day"
+            },
+            "id": "18d38931-248b-4734-bf35-ed1ae34ec1b1"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "4th(?) day"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "54b4a20a-3acf-44bc-a194-b97f84c732cd"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "12th day, 5th(?) day"
+            },
+            "id": "1ae2fd6d-2ff3-471f-a730-eaaf4853a5e4"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "5th(?) day"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "49b6bd39-0cc3-4089-bc3f-ecd082c77aa6"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "13th day, 6th(?) day"
+            },
+            "id": "457b4d9a-e203-432a-b678-c94ae8622b6e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "6th(?) day"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "41ce62d0-3cbb-4af5-aa4d-dd0820975657"
+          }
+        ],
+        "true6": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "14th day, 7th(?) day"
+            },
+            "id": "5f94fe98-b100-444d-b09c-84cabba0addb"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "7th(?) day"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "e7ce6c72-1c67-43dc-81c0-64afcd743c46"
+          }
+        ],
         "true7": [],
         "true8": [],
         "true9": [],
@@ -96,7 +303,13 @@
         "true13": [],
         "true14": [],
         "true15": [],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_STOP",
+            "args": {},
+            "id": "e8b7906c-052b-4a22-b010-9ec408d45c8d"
+          }
+        ]
       },
       "id": "2b82ecd3-3489-4019-ae00-a8a43defecef"
     }

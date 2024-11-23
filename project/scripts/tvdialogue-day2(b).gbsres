@@ -1,0 +1,60 @@
+{
+  "_resourceType": "script",
+  "id": "9ac1b6e9-4604-45d1-81e7-271770ffe668",
+  "name": "TVDialogue-Day2(B)",
+  "description": "2nd day trapped in the tv",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_43",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "...",
+          "It's pitch black.",
+          "What time is it?",
+          "What day is it?",
+          "Where are you?",
+          "These questions\nkeep popping up\nin your head.",
+          "You try to recall\nhow you got\nhere...",
+          "But you can't\nthink of anything.",
+          "A feeling of dread\nwashes over you.",
+          "Suddenly...",
+          "You are met with a flash\nof bright light.",
+          "And then you see\nsomeone through\nthe screen...",
+          "!!!",
+          "It's the boy from\nbefore!",
+          "He stares at\nyou...",
+          "He has a worried\nexpression on\nhis face.",
+          "You wonder what's\ntroubling him.",
+          "You ask, but once\nagain you're met\nwith silence.",
+          "Just what is this\nboy doing?",
+          "Why does he \nreveal himself...",
+          "Only to ignore\nyou?",
+          "After a short\nwhile...",
+          "The boy sighs a\nbreath of relief.",
+          "And then he\nreaches a hand\ntowards you.",
+          "And then darkness."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "79f7c09d-4f92-4327-952b-2e2c3e132f61"
+    }
+  ]
+}

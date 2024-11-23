@@ -20,7 +20,23 @@
           "Glass?",
           "Just where are you\nexactly?",
           "As you sit and\nponder this\nquestion...",
-          "You are suddenly\nmet with a flash\nof bright light."
+          "You are suddenly\nmet with a flash\nof bright light.",
+          "And then you see\nsomeone through\nthe screen...",
+          "!!!",
+          "It's a boy!",
+          "You frantically\nwave at him...",
+          "But he doesn't see\nyou.",
+          "YOu then try\nscreaming as hard\nas you can...",
+          "But he doesn't\nhear you either.",
+          "The boy is just...",
+          "Sitting there...",
+          "He has an eager\nexpression on his\nface.",
+          "Confused, you\nblankly stare\nback.",
+          "...",
+          "After a short\nwhile...",
+          "The boy starts to\nlook tired.",
+          "He then reaches\nhand towards you.",
+          "And then darkness."
         ],
         "__section": "text",
         "avatarId": "",
@@ -40,6 +56,13 @@
         "closeDelayFrames": 30
       },
       "id": "33cdb311-dd98-4a47-ab8b-5bb3e4f4edc2"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "c330f4ab-501b-4373-b956-e8e4252fe7ef"
+      },
+      "id": "902e373c-6ba0-48cd-83d1-2aeba10b0939"
     }
   ]
 }

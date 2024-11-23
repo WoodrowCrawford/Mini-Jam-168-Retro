@@ -8,25 +8,54 @@
   "symbol": "script_13",
   "script": [
     {
-      "command": "EVENT_IF",
+      "command": "EVENT_SWITCH",
       "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "3"
-          },
-          "valueB": {
-            "type": "number",
-            "value": 0
-          }
-        },
-        "__collapseElse": false,
-        "__label": "If first day",
-        "__collapse": true
+        "variable": "3",
+        "choices": 7,
+        "__collapseCase0": false,
+        "value0": 0,
+        "__collapseCase1": false,
+        "value1": 1,
+        "__collapseCase2": false,
+        "value2": 2,
+        "__collapseCase3": false,
+        "value3": 3,
+        "__collapseCase4": true,
+        "value4": 4,
+        "__collapseCase5": true,
+        "value5": 5,
+        "__collapseCase6": true,
+        "value6": 6,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
       },
       "children": {
-        "true": [
+        "true0": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "1st day",
+              "__collapse": true
+            },
+            "id": "0dba6c7a-0587-46a2-b960-7a5ba17b7261"
+          },
           {
             "command": "EVENT_TEXT",
             "args": {
@@ -89,35 +118,20 @@
             "id": "ce511772-2fc6-4d6d-a196-91c9b0d13a90"
           }
         ],
-        "false": []
-      },
-      "id": "4aa1d57e-8cdc-4043-a5f2-73a51e894d75"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "3"
+        "true1": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "2nd day",
+              "__collapse": true
+            },
+            "id": "461f7b0e-9c60-4181-9bd2-551d180fdbd1"
           },
-          "valueB": {
-            "type": "number",
-            "value": 1
-          }
-        },
-        "__collapseElse": true,
-        "__label": "If 2nd day",
-        "__collapse": true
-      },
-      "children": {
-        "true": [
           {
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "second day"
+                "The 2nd day"
               ],
               "__section": "text",
               "avatarId": "",
@@ -175,35 +189,20 @@
             "id": "74cf9daf-60bb-4904-8d0e-dd8baa165876"
           }
         ],
-        "false": []
-      },
-      "id": "41764c09-bc6e-4215-848e-c4548a36dbb9"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "3"
+        "true2": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "3rd day",
+              "__collapse": true
+            },
+            "id": "97eeca8f-2051-4d58-bf94-34afcece027a"
           },
-          "valueB": {
-            "type": "number",
-            "value": 2
-          }
-        },
-        "__collapseElse": true,
-        "__collapse": true,
-        "__label": "If 3rd day"
-      },
-      "children": {
-        "true": [
           {
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "third day"
+                "The 3rd day"
               ],
               "__section": "text",
               "avatarId": "",
@@ -261,35 +260,20 @@
             "id": "1fe6f08c-0c5f-4bf8-a908-f472fcef112f"
           }
         ],
-        "false": []
-      },
-      "id": "9bd98eff-ba12-4823-b2dd-7e3e4977e35a"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "3"
+        "true3": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "4th day",
+              "__collapse": true
+            },
+            "id": "20eb12c1-5b5e-4dd5-b8de-8c53b3d95fc4"
           },
-          "valueB": {
-            "type": "number",
-            "value": 3
-          }
-        },
-        "__collapseElse": true,
-        "__label": "if 4th day",
-        "__collapse": false
-      },
-      "children": {
-        "true": [
           {
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "fourth day"
+                "The 4th day"
               ],
               "__section": "text",
               "avatarId": "",
@@ -307,7 +291,7 @@
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30,
-              "__collapse": true
+              "__collapse": false
             },
             "id": "20c7f945-2c87-45f4-8a78-92d3998c8cc4"
           },
@@ -347,30 +331,15 @@
             "id": "89aed3a0-5968-4b2f-94c6-e1cae803d616"
           }
         ],
-        "false": []
-      },
-      "id": "09400531-1ea3-4aa9-847d-d617c2f3d813"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "3"
+        "true4": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "5th day",
+              "__collapse": true
+            },
+            "id": "f6b8d00a-fdf8-4c6a-8b41-4c821da08863"
           },
-          "valueB": {
-            "type": "number",
-            "value": 4
-          }
-        },
-        "__collapseElse": true,
-        "__collapse": true,
-        "__label": "if 5th day"
-      },
-      "children": {
-        "true": [
           {
             "command": "EVENT_TEXT",
             "args": {
@@ -393,7 +362,7 @@
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30,
-              "__collapse": true
+              "__collapse": false
             },
             "id": "03f4d525-aa90-4fe2-ae80-a5fc49471269"
           },
@@ -433,30 +402,15 @@
             "id": "f2e91307-b2ff-49ef-8e41-94789fb0457d"
           }
         ],
-        "false": []
-      },
-      "id": "cbd88a98-4cb0-41e1-b588-2cb6b8c0376e"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "3"
+        "true5": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "6th day",
+              "__collapse": true
+            },
+            "id": "81c177c1-bc95-4766-815a-6851d5072037"
           },
-          "valueB": {
-            "type": "number",
-            "value": 5
-          }
-        },
-        "__collapseElse": true,
-        "__label": "if 6th day",
-        "__collapse": false
-      },
-      "children": {
-        "true": [
           {
             "command": "EVENT_TEXT",
             "args": {
@@ -519,34 +473,20 @@
             "id": "dab630b7-210f-415d-b036-1963eb214f56"
           }
         ],
-        "false": []
-      },
-      "id": "4998b9f4-1914-4326-a62e-b13a87b5bf61"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "variable",
-            "value": "3"
+        "true6": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "7th day",
+              "__collapse": true
+            },
+            "id": "d6df3e5a-fd1a-476a-be94-04270d95a2a6"
           },
-          "valueB": {
-            "type": "number",
-            "value": 6
-          }
-        },
-        "__collapseElse": true,
-        "__label": "if 7th day"
-      },
-      "children": {
-        "true": [
           {
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "The seventh day"
+                "The 7th day"
               ],
               "__section": "text",
               "avatarId": "",
@@ -563,7 +503,8 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__collapse": false
             },
             "id": "97af579d-f0e1-4934-94b6-0c3d97343570"
           },
@@ -586,7 +527,8 @@
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
             "args": {
-              "customEventId": "9ef6642e-9b39-45ff-b98f-e1b4dfd5aa7f"
+              "customEventId": "9ef6642e-9b39-45ff-b98f-e1b4dfd5aa7f",
+              "__collapse": true
             },
             "id": "f96b7943-d39f-4602-8ef2-d65248a4b72c"
           },
@@ -596,14 +538,30 @@
               "variable": "9",
               "value": {
                 "type": "true"
-              }
+              },
+              "__collapse": true
             },
             "id": "033e6da6-eafc-475d-bff2-1fe1565cd3ba"
           }
         ],
-        "false": []
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_STOP",
+            "args": {},
+            "id": "6e45e96b-7330-4d94-97cb-a981fd2bcf94"
+          }
+        ]
       },
-      "id": "5f46761c-714b-4b05-9104-45e3d174cf15"
+      "id": "5143e640-4a73-46b2-8ff0-f62319282bee"
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "_resourceType": "script",
+  "id": "c330f4ab-501b-4373-b956-e8e4252fe7ef",
+  "name": "GoToBedInTVDialogue-Day1",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_42",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You sit in silence\nfor a moment.",
+          "How come that boy\nstared at you...",
+          "And said nothing?",
+          "Why was he\nignoring you?",
+          "Could he not see\nyour frantic\nmoving?",
+          "Could he not hear\nyour cries for\nhelp?",
+          "...",
+          "You continue to\nsit in darkness.",
+          "It feels like a\nday has passed..."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": 3,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "ef3ad2eb-6f80-4080-b3c0-0d66de07675f"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "5da0c73c-f578-4b5d-bf96-d757566db1d7"
+      },
+      "id": "6fb34304-c986-4f15-8e69-08697b7c373c"
+    }
+  ]
+}

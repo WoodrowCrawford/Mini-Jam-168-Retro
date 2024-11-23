@@ -68,6 +68,13 @@
         "__presetId": ""
       },
       "id": "39eea9fb-3c7d-4417-8866-58e77bfd07a9"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "5da0c73c-f578-4b5d-bf96-d757566db1d7"
+      },
+      "id": "db17bf85-2448-401a-a477-0894cba14ef6"
     }
   ]
 }
