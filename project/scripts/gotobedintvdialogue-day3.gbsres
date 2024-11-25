@@ -1,0 +1,78 @@
+{
+  "_resourceType": "script",
+  "id": "ba70a400-4677-4324-9dba-3a9fd45e63d4",
+  "name": "GoToBedInTVDialogue-Day3",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_46",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You sit in silence\nfor a moment.",
+          "It turns out...",
+          "He couldn't hear\nyou at all.",
+          "You were so\nclose...",
+          "Why can't he see\nyou?",
+          "Why can't he help\nyou?",
+          "\"Someone...\"",
+          "\"Please help\nme...\"",
+          "...",
+          "You continue to \nsit in the\ndarkness.",
+          "You have a small\nvision...",
+          "You're in the back\nof an alley.",
+          "It's dark, but you\ncan still see your\nsurroundings.",
+          "Why are you here?",
+          "Wherever you are,\nyou need to get\nhelp. ",
+          "You start to\ntraverse the ally,",
+          "Occasionally you\nwould step on a\npiece of trash,",
+          "But only because\nyou're clumsy.",
+          "As you're walking,\nyou spot a\nfigure...",
+          "!!!",
+          "It's the boy!",
+          "What is he doing\nhere?",
+          "Oh well, now is \nnot the time to\nworry about that.",
+          "You plead for him\nto help you,",
+          "But it doesn't \nseem like he can\nunderstand you.",
+          "Instead, he pulls\nout a...",
+          "Huh? A vacuum\ncleaner?",
+          "Is he going to\nvacuum...outside?",
+          "He turns it on,\nthen looks\nstraight at you.",
+          "?",
+          "He points the hose\nat you,",
+          "And then you get\nsucked in  the\nvacuum!",
+          "Even as you\nscreamed for help,",
+          "He just ignored\nyou!",
+          "Then the vison\nends.",
+          "It feels like a\nday has passed..."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9e0730dc-f3dc-4d89-9f5a-4fa88fd9b63f"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "5da0c73c-f578-4b5d-bf96-d757566db1d7"
+      },
+      "id": "7d3a4fb6-9dd9-4586-8c28-93b8b05f0287"
+    }
+  ]
+}

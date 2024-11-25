@@ -10,7 +10,16 @@
     {
       "command": "EVENT_TEXT",
       "args": {
-        "text": "",
+        "text": [
+          "You sit in silence\nfor a moment.",
+          "You wonder what\nthat boy is up to.",
+          "It's pretty clear\nby now...",
+          "That boy can't see\nyou.",
+          "If only you could\nget his attention\nsomehow...",
+          "...",
+          "You continue to\nsit in darkness.",
+          "It feels like a\nday has passed..."
+        ],
         "__section": "text",
         "avatarId": "",
         "minHeight": 4,
@@ -29,6 +38,13 @@
         "closeDelayFrames": 30
       },
       "id": "de3bb4f2-80bd-4aab-a886-b2f3662a0bef"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "5da0c73c-f578-4b5d-bf96-d757566db1d7"
+      },
+      "id": "d5dab56a-cb00-4525-8ddc-a1830be499f1"
     }
   ]
 }
