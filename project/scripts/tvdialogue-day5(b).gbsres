@@ -1,0 +1,60 @@
+{
+  "_resourceType": "script",
+  "id": "ad618935-e2ac-46b3-b591-1b72c68875cc",
+  "name": "TVDialogue-Day5(B)",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_49",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "...",
+          "It's pitch black.",
+          "You're still\ntrying to process\neverything.",
+          "Trapped inside a\nTV?",
+          "How could that\nhave happened?",
+          "And more\nimportantly...",
+          "How are you going\nto get out?",
+          "You start thinking\nof a plan.",
+          "Just as you were\nthinking...",
+          "You were met with\na bright flash of\nlight.",
+          "And then you see\nsomeone through\nthe screen...",
+          "!!!",
+          "It's the boy!",
+          "But something\nis...off.",
+          "He seems anxious.",
+          "Just what is he\nwatching?",
+          "He suddenly turns\noff the Tv.",
+          "And then darkness."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "cb512cdb-4c5f-484d-a4ac-cb849ac572e2"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "d68a5330-dc4a-4daa-94ec-70e20c157693"
+      },
+      "id": "dc439b65-5de9-4642-9cce-8900724f91d5"
+    }
+  ]
+}

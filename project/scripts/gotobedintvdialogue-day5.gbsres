@@ -1,0 +1,68 @@
+{
+  "_resourceType": "script",
+  "id": "d68a5330-dc4a-4daa-94ec-70e20c157693",
+  "name": "GoToBedInTVDialogue-Day5",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_50",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You sit in silence\nfor a moment.",
+          "You wonder if the\nboy is okay.",
+          "That face he\nmade...",
+          "It displayed both\nfear and concern.",
+          "Just what was he\nwatching?",
+          "Whatever it was,\nit must have been\nserious.",
+          "You try to think\nof what he could\nhave watched...",
+          "...",
+          "As you were trying\nto think of\nsomething...",
+          "You hear a faint\nvoice.",
+          "It sounds like...",
+          "The boy?",
+          "\"...A missing\nboy?\"",
+          "\"And his face...\"",
+          "\"Haven't I seen\nthat face before?\"",
+          "Wait is he talking\nabout you?",
+          "Does that mean\nthat someone out\nthere...",
+          "Knows you're\nmissing?",
+          "...",
+          "You feel a sense\nof dread.",
+          "You just want to\nget out of here.",
+          "You scream in the\ndarkness,",
+          "Hoping someone\nwould hear you.",
+          "...",
+          "You continue to\nsit in darkness.",
+          "It feels like a\nday has passed."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "7282f0b0-0059-477b-9eba-0c3df64f15e8"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "5da0c73c-f578-4b5d-bf96-d757566db1d7"
+      },
+      "id": "59545fab-cbed-464b-aab6-618f3e3f2381"
+    }
+  ]
+}
