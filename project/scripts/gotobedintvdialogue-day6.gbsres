@@ -1,0 +1,71 @@
+{
+  "_resourceType": "script",
+  "id": "3049f805-a2ac-4a27-8f21-528e0e1fde53",
+  "name": "GoToBedInTVDialogue-Day6",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_52",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You sit in silence\nfor a moment.",
+          "The boy...",
+          "Was he crying?",
+          "He must have\nwatched something\nreally sad.",
+          "As much as you\nwant to feel sorry\nfor him...",
+          "You arent having\nthe best day\neither.",
+          "Actually,\neverything that\ncould go wrong...",
+          "Went wrong.",
+          "You're trapped\ninside a Tv.",
+          "Not only that...",
+          "But you're forced\nto see the other \nside every day.",
+          "And not only\nthat...",
+          "The person you see\neveryday can't\nhear you at all.",
+          "Is this how it's\ngonna be from now\non?",
+          "The same loop day\nin and day out.",
+          "Will this ever\nend?",
+          "Something starts\nto stir within\nyou.",
+          "Anger?\nFrustration?",
+          "Hopelessness?",
+          "Whatever it is,\nYou start to\nthrow a fit.",
+          "You start\nscreaming like a\nmad man.",
+          "Hysterical even.",
+          "You scream so loud\nyour throat hurts.",
+          "Then you scream\nsome more.",
+          "So hard that your\nthroat starts to\nhurt.",
+          "But you don't\ncare.",
+          "Someone is bound\nto hear you.",
+          "You continue to\nscream in the\ndarkness.",
+          "It feels like a\nday has passed..."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e93f1084-eea8-4292-a44d-57f7a84821f9"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "5da0c73c-f578-4b5d-bf96-d757566db1d7"
+      },
+      "id": "91936434-51d1-42ac-9307-691e75c32506"
+    }
+  ]
+}
