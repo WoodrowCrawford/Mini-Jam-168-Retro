@@ -29,7 +29,7 @@
           "But this is your\nchance to be a\nhero and help!",
           "You ask what you\ncan do to help.",
           "\"Wait really?\"",
-          "\"You're just gonna\nhelp no questions\nasked?\"\n",
+          "\"You're just gonna\nhelp no questions\nasked?\"",
           "\"Aren't you\ncurious how I got\nstuck here?\""
         ],
         "__section": "text",
@@ -183,7 +183,7 @@
           "type": "number",
           "value": 3
         },
-        "__collapse": false
+        "__collapse": true
       },
       "id": "d1c27032-3595-4a99-8c58-d3386cd29a35"
     }
