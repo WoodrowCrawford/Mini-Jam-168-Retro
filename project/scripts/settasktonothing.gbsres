@@ -2,7 +2,7 @@
   "_resourceType": "script",
   "id": "0c042361-1eba-4f2c-b106-fb6dac40f8ff",
   "name": "SetTaskToNothing",
-  "description": "Sets the task to nothing",
+  "description": "Sets the task to nothing 0",
   "variables": {},
   "actors": {},
   "symbol": "script_36",

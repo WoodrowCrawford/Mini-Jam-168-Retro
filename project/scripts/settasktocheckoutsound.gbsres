@@ -1,0 +1,10 @@
+{
+  "_resourceType": "script",
+  "id": "5ace9a5c-64ad-48f5-8bd3-7d58271e1815",
+  "name": "SetTaskToCheckOutSound",
+  "description": "Sets the task to check out the sound",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_56",
+  "script": []
+}

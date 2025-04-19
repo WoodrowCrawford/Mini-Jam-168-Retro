@@ -237,7 +237,7 @@
               },
               "__collapseElse": true,
               "__label": "if task is to go to bed",
-              "__collapse": true
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -278,7 +278,7 @@
             "args": {
               "text": "",
               "__collapse": true,
-              "__label": "what to do when tv is on"
+              "__label": "what to do when tv is already on"
             },
             "id": "c7835cde-be1c-4cfb-b4d0-62139fe340f6"
           },

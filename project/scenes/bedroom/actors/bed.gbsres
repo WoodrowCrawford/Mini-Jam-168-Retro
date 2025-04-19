@@ -20,7 +20,7 @@
       "command": "EVENT_SWITCH",
       "args": {
         "variable": "1",
-        "choices": 3,
+        "choices": 4,
         "__collapseCase0": false,
         "value0": 1,
         "__collapseCase1": false,
@@ -155,7 +155,7 @@
                 "value": "L0"
               },
               "__collapseElse": true,
-              "__collapse": false
+              "__collapse": true
             },
             "children": {
               "true": [
@@ -256,7 +256,7 @@
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30,
-              "__collapse": true
+              "__collapse": false
             },
             "id": "823d9487-d307-4435-9591-4b2985151ae7"
           },
@@ -266,7 +266,42 @@
             "id": "7da62d20-634c-4eb8-9d43-82a023f1a1f1"
           }
         ],
-        "true3": [],
+        "true3": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "",
+              "__collapse": true,
+              "__label": "If the task is to check out the sound"
+            },
+            "id": "cb2c6ee6-f667-4768-bc99-2d266c37428d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I should go check\nout that sound."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "11754f98-0975-4f87-afb8-838cfe6b1fba"
+          }
+        ],
         "true4": [],
         "true5": [],
         "true6": [],
