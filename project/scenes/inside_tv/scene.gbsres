@@ -11,24 +11,24 @@
   "paletteIds": [],
   "spritePaletteIds": [],
   "collisions": "",
-  "autoFadeSpeed": 1,
+  "autoFadeSpeed": 3,
   "symbol": "scene_5",
   "x": 912,
   "y": 328,
   "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "abfe7878-1cdb-4de8-b13b-0857d6a1385c"
+    },
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "06e60b6a-b279-47fb-9206-3996535e5c2f"
       },
       "id": "e806040f-54bf-4f33-9cb4-36875887a44c"
-    },
-    {
-      "command": "EVENT_ACTOR_HIDE",
-      "args": {
-        "actorId": "$self$"
-      },
-      "id": "abfe7878-1cdb-4de8-b13b-0857d6a1385c"
     }
   ],
   "playerHit1Script": [],

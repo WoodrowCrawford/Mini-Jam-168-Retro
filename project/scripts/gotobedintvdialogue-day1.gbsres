@@ -21,7 +21,7 @@
           "You continue to\nsit in darkness.",
           "It feels like a\nday has passed..."
         ],
-        "__section": "text",
+        "__section": "behavior",
         "avatarId": "",
         "minHeight": 4,
         "maxHeight": 7,

@@ -2,7 +2,7 @@
   "_resourceType": "script",
   "id": "06e60b6a-b279-47fb-9206-3996535e5c2f",
   "name": "InsideTVLogic",
-  "description": "What happens each day when the player is inside the t",
+  "description": "What happens each day when the player is inside the tv",
   "variables": {},
   "actors": {},
   "symbol": "script_8",
@@ -94,7 +94,8 @@
           {
             "command": "EVENT_COMMENT",
             "args": {
-              "text": "9th day, 2nd(?) day"
+              "text": "9th day, 2nd(?) day",
+              "__collapse": true
             },
             "id": "1775aa80-abd6-4458-b40b-c3e938301603"
           },
@@ -122,6 +123,14 @@
               "closeDelayFrames": 30
             },
             "id": "8289c045-0e6b-477d-aac7-27bae914fc26"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "9ac1b6e9-4604-45d1-81e7-271770ffe668",
+              "__collapse": true
+            },
+            "id": "ac7c0aef-7cc9-45e2-acf4-e92cffc751d7"
           }
         ],
         "true2": [
@@ -153,9 +162,18 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__collapse": true
             },
             "id": "0df430c1-67c0-4f48-b470-8e27ce9943e0"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "35242af9-c756-4070-b81c-60344e585d1c",
+              "__collapse": true
+            },
+            "id": "595f0f82-5c02-47e5-823e-8acadc26c156"
           }
         ],
         "true3": [
@@ -190,6 +208,13 @@
               "closeDelayFrames": 30
             },
             "id": "54b4a20a-3acf-44bc-a194-b97f84c732cd"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "b2bd6f00-6f98-413f-ad05-fafb19743f4d"
+            },
+            "id": "436fdc2d-e5af-46ff-93fb-0ec0b86667d9"
           }
         ],
         "true4": [
@@ -221,9 +246,18 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__collapse": true
             },
             "id": "49b6bd39-0cc3-4089-bc3f-ecd082c77aa6"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "ad618935-e2ac-46b3-b591-1b72c68875cc",
+              "__collapse": true
+            },
+            "id": "365ea4da-e814-47e3-9d47-0d23ec3af03c"
           }
         ],
         "true5": [
@@ -255,9 +289,17 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__collapse": true
             },
             "id": "41ce62d0-3cbb-4af5-aa4d-dd0820975657"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "c833b98e-d50f-4bb0-9e93-685013b8666d"
+            },
+            "id": "654f8ddc-4a86-44f2-b1b5-b305376d401f"
           }
         ],
         "true6": [
@@ -292,6 +334,13 @@
               "closeDelayFrames": 30
             },
             "id": "e7ce6c72-1c67-43dc-81c0-64afcd743c46"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "3fd66f44-6dd2-409e-946e-7ee2b3e10af2"
+            },
+            "id": "5c1d6b54-ccf4-48e9-8edb-16d94d63043d"
           }
         ],
         "true7": [],
@@ -306,7 +355,9 @@
         "false": [
           {
             "command": "EVENT_STOP",
-            "args": {},
+            "args": {
+              "__collapse": true
+            },
             "id": "e8b7906c-052b-4a22-b010-9ec408d45c8d"
           }
         ]

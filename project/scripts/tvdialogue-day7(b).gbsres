@@ -102,6 +102,13 @@
         "closeDelayFrames": 30
       },
       "id": "1816806e-0ec9-4c73-8eea-4537f3162cdf"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "3f212997-7636-4dd8-8417-ddecb0a3cdb3"
+      },
+      "id": "65a99a52-14a0-4e64-b20a-f6ef90c5f0a2"
     }
   ]
 }

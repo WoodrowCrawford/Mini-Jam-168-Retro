@@ -8,6 +8,18 @@
   "symbol": "script_13",
   "script": [
     {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 4,
+        "frequency": 297,
+        "duration": 0.03,
+        "effect": 0,
+        "__collapse": false
+      },
+      "id": "cfc9941c-4fc1-45b8-afca-8a0f1cf0924a"
+    },
+    {
       "command": "EVENT_SWITCH",
       "args": {
         "variable": "3",

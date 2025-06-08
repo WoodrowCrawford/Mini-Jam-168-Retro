@@ -183,7 +183,7 @@
           "type": "number",
           "value": 3
         },
-        "__collapse": true
+        "__collapse": false
       },
       "id": "d1c27032-3595-4a99-8c58-d3386cd29a35"
     }
