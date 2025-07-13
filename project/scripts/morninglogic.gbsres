@@ -32,11 +32,11 @@
         "value2": 2,
         "__collapseCase3": false,
         "value3": 3,
-        "__collapseCase4": true,
+        "__collapseCase4": false,
         "value4": 4,
-        "__collapseCase5": true,
+        "__collapseCase5": false,
         "value5": 5,
-        "__collapseCase6": true,
+        "__collapseCase6": false,
         "value6": 6,
         "__collapseCase7": false,
         "value7": 8,
@@ -427,7 +427,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "the sixth day"
+                "The 6th day"
               ],
               "__section": "text",
               "avatarId": "",
@@ -445,7 +445,7 @@
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30,
-              "__collapse": true
+              "__collapse": false
             },
             "id": "eb8bed32-a1ba-403e-9b40-94949b1b1c1b"
           },

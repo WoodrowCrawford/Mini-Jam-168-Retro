@@ -42,7 +42,7 @@
           "\"We could be tv\nbuddies!!\"",
           "\"Anyways, I have\nto get going!\"",
           "\"I'm sure we'll\nmeet again!\"",
-          "He then walks past\nyou, disappearing\ninto the darkness.",
+          "He then walks past\nyou, fading into\nthe darkness.",
           "You continue\nwalking forward.",
           "You reach a door,\nslightly opened.",
           "There doesn't seem\nto be any light\ncoming from it.",
@@ -66,7 +66,7 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30,
         "__presetId": "",
-        "__collapse": true
+        "__collapse": false
       },
       "id": "39eea9fb-3c7d-4417-8866-58e77bfd07a9"
     },
