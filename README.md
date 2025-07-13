@@ -20,6 +20,6 @@ You are play as a boy who only has one goal: watch TV! However, things arent wha
 # Where to play
 - <a href="https://www.example.com">Click here to download the gba rom file!</a>
 
-- <a href="https://github.com/WoodrowCrawford/Mini-Jam-168-Retro/releases/download/untagged-88c540d550ad316f890e/The.TV.gb">Play on the web here!</a>
+- <a href="https://woodrowcrawford.github.io/Mini-Jam-168-Retro/">Play on the web here!</a>
 
 
