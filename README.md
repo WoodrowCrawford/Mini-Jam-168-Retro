@@ -4,3 +4,12 @@
 
 # Story
 You are play as a boy who only has one goal: watch TV! However, things arent what they seem in this short visual novel story!
+
+
+# Screenshots
+
+
+
+# Where to play
+- Download the rom file to play here!
+- Play on the web here!
