@@ -18,7 +18,8 @@ You are play as a boy who only has one goal: watch TV! However, things arent wha
 <img width="300" height="361" alt="Screenshot 2025-07-13 at 2 03 04 AM" src="https://github.com/user-attachments/assets/07d27d07-2a92-4289-be79-4cf39da0edec" />
 
 # Where to play
-- <a href="https://www.example.com">Click here to download the gba rom file!</a>
+- [The TV.gb.zip](https://github.com/user-attachments/files/27659172/The.TV.gb.zip)
+
 
 - <a href="https://woodrowcrawford.github.io/Mini-Jam-168-Retro/">Play on the web here!</a>
 
